@@ -97,12 +97,12 @@ function PageTwo() {
                 <div className={classes.col1}>
                   <div className={classes.logo}>
                     <LazyLoadImage effect="blur"  className={classes.logovn} src={"../logo-03.webp"} />
-                      {/* <h5 className={classes.commingsoon}>
+                      <h5 className={classes.commingsoon}>
                         
                         HỖ TRỢ ỔN ĐỊNH <br/>
                         ĐƯỜNG HUYẾT HIỆU QUẢ 
                        
-                      </h5> */}
+                      </h5>
                     </div>
                   </div>
                   <div className={classes.col2}>
