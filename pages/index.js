@@ -10,9 +10,9 @@ import Footer from "../containers/Footer";
 export default function Home() {
   return (
     <>
-      <PageOne />
-      {/* <PageTwo />
-      <PageThree />
+      {/* <PageOne /> */}
+     <PageTwo />
+      {/*  <PageThree />
       <PageFour />
       <PageFive />
       <Footer /> */}
