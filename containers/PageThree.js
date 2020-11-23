@@ -6,7 +6,9 @@ import Collapsed from "../components/Collapse";
 
 
 const useStyles = makeStyles((theme) => ({
-  
+  root:{
+    backgroundColor: "#ecf6e8",
+  },
   hightlight: {
     width: "100%",
     background: "url('../rect.jpg')",

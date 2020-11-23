@@ -14,3 +14,6 @@ svg {
 h1,h2,h3,h4,h5{
   margin: 0px;
 }
+.MuiInput-underline:hover:not(.Mui-disabled):before, .MuiInput-underline:after, .MuiInput-underline:before{
+  border-bottom: 0px !important;
+}

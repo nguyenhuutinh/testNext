@@ -7,6 +7,9 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Container, Grid } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
+  root:{
+    backgroundColor: "#ecf6e8",
+  },
   promovideo: {
     backgroundColor: "white",
     borderTopLeftRadius: "10px",
@@ -63,7 +66,7 @@ function PageFour() {
                 <LazyLoadImage effect="blur" className={classes.text2} src={"../mbtext2.png"} />
               </div>
               <video
-              className={classes.videoitem}
+                className={classes.videoitem}
                 controls
                 data-automation="MIKIEUMACH_OLDHENRY_heroVideo_video"
                 autoplay="false"
@@ -71,7 +74,7 @@ function PageFour() {
                 loop="loop"
                 muted="muted"
                 webkit-playsinline="true"
-                playsinline="true"
+                playsInline= {true}
                 poster=""
               >
 
