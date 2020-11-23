@@ -208,7 +208,7 @@ function PageFive() {
               <div className={classes.formdangky}>
 			
           <Grid item xs={12}>
-							<img src={'../Layer5.png'} className={classes.layer5} style={{ marginTop: 30 }} />
+							<img src={'../Layer5.jpg'} className={classes.layer5} style={{ marginTop: 30 }} />
 						</Grid>
             <Grid item xs={12} style={{ paddingLeft: 10, paddingRight: 10 }}>
 							<div className={classes.form_title}>
