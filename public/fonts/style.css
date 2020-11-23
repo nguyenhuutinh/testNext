@@ -1,0 +1,76 @@
+@font-face {
+	font-weight: normal;
+	font-family: 'Font Awesome 5 Free';
+	font-style: normal;
+	src: url('fa-solid-900.woff2') format('woff2'),
+         url('fa-solid-900.woff') format('woff');
+	font-display: swap;
+}
+@font-face {
+	font-weight: normal;
+	font-family: 'UTMCaviar';
+	font-style: normal;
+	src: url('utm-caviar1.woff2') format('woff2'),
+         url('utm-caviar1.woff') format('woff');
+	font-display: swap;
+}
+@font-face {
+	font-weight: normal;
+	font-family: 'UTMCenturBold';
+	font-style: normal;
+	src: url('utm-centurbold.woff2') format('woff2'),
+         url('utm-centurbold.woff') format('woff');
+	font-display: swap;
+}
+@font-face {
+	font-weight: normal;
+	font-family: 'FSDiavloBold';
+	font-style: normal;
+	src: url('fsdiavlobold.woff2') format('woff2'),
+         url('fsdiavlobold.woff') format('woff');
+	font-display: swap;
+}
+
+@font-face {
+	font-weight: normal;
+	font-family: 'FSDiavloMedium';
+	font-style: normal;
+	src: url('fsdiavlomedium.woff2') format('woff2'),
+         url('fsdiavlomedium.woff') format('woff');
+	font-display: swap;
+}
+
+
+@font-face {
+	font-weight: normal;
+	font-family: 'FSDiavloRegular';
+	font-style: normal;
+	src: url('fsdiavlobook.woff2') format('woff2'),
+         url('fsdiavlobook.woff') format('woff');
+	font-display: swap;
+}
+
+@font-face {
+	font-weight: normal;
+	font-family: 'SVNShaded';
+	font-style: normal;
+	src: url('svn-larch-shaded.woff2') format('woff2'),
+         url('svn-larch-shaded.woff') format('woff');
+	font-display: swap;
+}
+@font-face {
+	font-weight: normal;
+	font-family: 'HelveticaNeue';
+	font-style: normal;
+	src: url('fsdiavlobook.woff2') format('woff2'),
+         url('fsdiavlobook.woff') format('woff');
+	font-display: swap;
+}
+@font-face {
+	font-weight: normal;
+	font-family: 'HelveticaNeueMedium';
+	font-style: normal;
+	src: url('helveticaneuemedium.woff2') format('woff2'),
+         url('helveticaneuemedium.woff') format('woff');
+	font-display: swap;
+}
