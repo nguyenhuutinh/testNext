@@ -59,7 +59,7 @@ function PageFour() {
           alignContent="center"
           justify="center"
         >
-          {true ?
+          {touchDevice ?
             <div className={classes.promovideo}>
               <div className={classes.videotitle}>
                 <LazyLoadImage effect="blur" className={classes.text1} src={"../mbtext1.png"} />

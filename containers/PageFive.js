@@ -175,7 +175,7 @@ function PageFive() {
   const [isSelectVisible, setSelectVisible] = useState(false);
   const selectRef = useRef()
   useEffect(() => {
-    // setTouchDevice("ontouchstart" in document.documentElement);
+    setTouchDevice("ontouchstart" in document.documentElement);
     
   }, []);
   const handleClickOutside = (event)=>{
@@ -193,7 +193,7 @@ function PageFive() {
   const [touchDevice, setTouchDevice] = useState(false);
   return (
     <>
-      {true ? (
+      {touchDevice ? (
         <>
           <Container disableGutters> 
             <Grid

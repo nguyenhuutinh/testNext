@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
 function PageThree() {
   const classes = useStyles();
   useEffect(() => {
-    setTouchDevice("ontouchstart" in document.documentElement);
+    setTouchDevice("touchstart" in document.documentElement);
   }, []);
   const [touchDevice, setTouchDevice] = React.useState(false);
   return (
