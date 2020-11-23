@@ -200,7 +200,6 @@ const navLinks = [
   { title: `News`, path: `news` },
   { title: `Settings`, path: `settings` },
   { title: `Chats`, path: `chats` },
-  { title: `Logout`, path: `login` },
 ];
 
 function DashboardNavbar() {

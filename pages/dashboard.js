@@ -6,7 +6,7 @@ import useWindowDimensions from "../hooks/windowsize";
 import BulletPoints from "../components/BulletPoints";
 import BlackFooter from "../containers/BlackFooter";
 import { useRouter } from "next/router";
-import firebase from "firebase/app";
+// import firebase from "firebase/app";
 import DashboardTitle from "../components/DashboardTitle";
 
 const useStyles = makeStyles((theme) => ({
