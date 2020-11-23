@@ -11,10 +11,10 @@ export default function Home() {
   return (
     <>
       {/* <PageOne /> */}
-     <PageTwo />
-     <PageThree />
-       {/*  <PageFour />
-      <PageFive />
+      <PageTwo />
+      <PageThree />
+      <PageFour />
+      {/* <PageFive />
       <Footer /> */}
     </>
   );

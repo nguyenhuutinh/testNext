@@ -1,117 +1,43 @@
 import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Card from "@material-ui/core/Card";
-import Typography from "@material-ui/core/Typography";
-import useWindowDimensions from "../hooks/windowsize";
-import { CardContent } from "@material-ui/core";
-import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
-import { urlObjectKeys } from "next/dist/next-server/lib/utils";
 
+import useWindowDimensions from "../hooks/windowsize";
+
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import { Container, Grid } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
-  root: {
-    background: "#FAFAFA",
-    marginTop: "5rem",
-    textAlign: "center",
-    width: "100%",
-  },
-  card: {
-    width: "100%",
-    backgroundRepeat: "no-repeat",
+  promovideo: {
+    backgroundColor: "white",
+    borderTopLeftRadius: "10px",
+    borderTopRightRadius: "10px",
+    border: "1px solid #084f1f",
     backgroundSize: "cover",
-    backgroundImage: "url(./DSC_5350.jpeg)",
-    backgroundPosition: "center",
+    marginBottom: "70px",
+    display: "flex",
+    flexDirection: "column",
+
+
   },
-  slideTitle: {
-    marginTop: "3rem",
-    color: "white",
-    fontFamily:
-      "Lato, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
-    fontWeight: 300,
-    fontSize: "3rem",
-    ["@media (max-width: 4000px)"]: {
-      marginTop: "5rem",
-      fontSize: "10rem",
-    },
-    ["@media (max-width: 3500px)"]: {
-      fontSize: "8rem",
-    },
-    ["@media (max-width: 3000px)"]: {
-      fontSize: "7rem",
-    },
-    ["@media (max-width: 2500px)"]: {
-      fontSize: "5rem",
-    },
-    ["@media (max-width: 2000px)"]: {
-      marginTop: "3rem",
-      fontSize: "3rem",
-    },
-    ["@media (max-width: 500px)"]: {
-      fontSize: "3rem",
-    },
-    ["@media (max-width: 400px)"]: {
-      fontSize: "2rem",
-    },
-    ["@media (max-width: 300px)"]: {
-      fontSize: "1.5rem",
-    },
-    ["@media screen and (orientation: landscape) and (max-device-width: 1000px)"]: {
-      fontSize: "1rem",
-    },
-    ["@media screen and (orientation: landscape) and (max-device-width: 900px)"]: {
-      fontSize: "1rem",
-    },
-    ["@media screen and (orientation: landscape) and (max-device-width: 800px)"]: {
-      fontSize: "1rem",
-    },
-    ["@media screen and (orientation: landscape) and (max-device-width: 700px)"]: {
-      fontSize: "0.8rem",
-    },
-    ["@media screen and (orientation: landscape) and (max-device-width: 400px)"]: {
-      fontSize: "0.2rem",
-    },
+  videotitle: {
+    paddingTop: "30px",
+    textAlign: "center",
+
   },
-  slideSubTitle: {
-    marginTop: "3rem",
-    color: "white",
-    fontFamily:
-      "Poppins, -apple-system, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, sans-serif",
-    fontWeight: 400,
-    fontSize: "1rem",
-    ["@media (max-width: 4000px)"]: {
-      fontSize: "2rem",
-    },
-    ["@media (max-width: 3500px)"]: {
-      fontSize: "1.7rem",
-    },
-    ["@media (max-width: 3000px)"]: {
-      fontSize: "1.5rem",
-    },
-    ["@media (max-width: 2500px)"]: {
-      fontSize: "1.2rem",
-    },
-    ["@media (max-width: 2000px)"]: {
-      marginTop: "3rem",
-      fontSize: "1rem",
-    },
+  text1: {
+    width: "95%",
   },
-  fav: {
-    transform: "scale(5)",
-    ["@media (max-width: 4000px)"]: {
-      transform: "scale(10)",
-    },
-    ["@media (max-width: 3500px)"]: {
-      transform: "scale(8)",
-    },
-    ["@media (max-width: 3000px)"]: {
-      transform: "scale(7)",
-    },
-    ["@media (max-width: 2500px)"]: {
-      transform: "scale(6)",
-    },
-    ["@media (max-width: 2000px)"]: {
-      transform: "scale(5)",
-    },
+  text2: {
+    marginTop: "10px",
+    width: "95%"
   },
+  videoitem: {
+    marginTop: "40px",
+    // margin-left: 2px;
+    // margin-right: 2px;
+    marginBottom: "0px",
+    width: "calc(100% - 0.5px)"
+  }
 }));
 
 function PageFour() {
@@ -123,35 +49,39 @@ function PageFour() {
     setTouchDevice("ontouchstart" in document.documentElement);
   }, []);
   return (
-    <>
-      <div className={classes.root}>
-        <Card
-          className={classes.card}
-          style={{
-            height: height,
-          }}
+    <><div className={classes.root}>
+      <Container>
+        <Grid
+          container
+          alignContent="center"
+          justify="center"
         >
-          <CardContent>
-            <FavoriteBorderIcon
-              className={classes.fav}
-              htmlColor="white"
-              style={{ marginTop: halfHeight }}
-            />
-            <Typography variant="h2" className={classes.slideTitle}>
-              We love our Community
-            </Typography>
-            <Typography
-              variant="body2"
-              className={classes.slideSubTitle}
-              style={{ textAlign: touchDevice ? "start" : "center" }}
-            >
-              We are only as strong as our network, therefore we decided to
-              engage with the community and help where we can. See our projects
-              below.
-            </Typography>
-          </CardContent>
-        </Card>
-      </div>
+          {true ?
+            <div className={classes.promovideo}>
+              <div className={classes.videotitle}>
+                <LazyLoadImage effect="blur" className={classes.text1} src={"../mbtext1.png"} />
+                <LazyLoadImage effect="blur" className={classes.text2} src={"../mbtext2.png"} />
+              </div>
+              <video
+              className={classes.videoitem}
+                controls
+                data-automation="MIKIEUMACH_OLDHENRY_heroVideo_video"
+                autoplay="false"
+                preload="auto"
+                loop="loop"
+                muted="muted"
+                webkit-playsinline="true"
+                playsinline="true"
+                poster=""
+              >
+
+                <source src={"https://oldhenryvn.s3-ap-southeast-1.amazonaws.com/assets/chi-tai-preview.mp4"} type="video/mp4" />
+              </video>
+
+            </div> : ""}
+        </Grid>
+        </Container> 
+        </div>
     </>
   );
 }

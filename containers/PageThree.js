@@ -6,6 +6,7 @@ import Collapsed from "../components/Collapse";
 
 
 const useStyles = makeStyles((theme) => ({
+  
   hightlight: {
     width: "100%",
     background: "url('../rect.jpg')",
@@ -23,6 +24,10 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: "0px",
       marginTop: "8px"
     }
+  },
+  advantage:{
+    marginTop: "10p",
+    marginBottom: "10px"
   }
 }));
 
