@@ -7,7 +7,7 @@ import Collapsed from "../components/Collapse";
 
 const useStyles = makeStyles((theme) => ({
   hightlight: {
-    width:"100%",
+    width: "100%",
     background: "url('../rect.jpg')",
     backgroundSize: "cover",
     paddingTop: "10px",
@@ -42,14 +42,14 @@ function PageThree() {
             alignContent="center"
             justify="center"
           >
-           <div className={classes.hightlight}>
-						<h5 style={{ textTransform: 'uppercase' }}>
-						  ĐẶC ĐIỂM NỔI BẬT
+            <div className={classes.hightlight}>
+              <h5 style={{ textTransform: 'uppercase' }}>
+                ĐẶC ĐIỂM NỔI BẬT
 							<br />
-						</h5>
-            
-					</div>
-         
+              </h5>
+
+            </div>
+
           </Grid>
           <Grid
             container
@@ -57,9 +57,9 @@ function PageThree() {
             alignContent="center"
             justify="center"
           >
-        <div className={classes.advantage}>
-          <Collapsed/>
-        </div>
+            <div className={classes.advantage}>
+              <Collapsed />
+            </div>
           </Grid>
         </Container>
       </div>
