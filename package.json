@@ -1,0 +1,20 @@
+{
+  "name": "lifit",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "firebase": "^8.0.2",
+    "next": "9.5.5",
+    "normalize.css": "^8.0.1",
+    "react": "16.14.0",
+    "react-carousel": "^4.3.0",
+    "react-dom": "16.14.0"
+  }
+}
