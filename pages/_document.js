@@ -13,6 +13,11 @@ export default class MyDocument extends Document {
           <link             rel="preload"            as="font"
 
  href="/fonts/style.css" rel="stylesheet"/>
+<link rel="preload" href="/fonts/fsdiavlomedium.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+<link rel="preload" href="/fonts/svn-larch-shaded.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+<link rel="preload" href="/fonts/helveticaneuemedium.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+<link rel="preload" href="/fonts/utm-caviar1.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+<link rel="preload" href="/fonts/utm-centurbold.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
 
         </Head>
         <body>
