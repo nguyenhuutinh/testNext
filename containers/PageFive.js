@@ -281,7 +281,7 @@ function PageFive() {
 							</form>
 						</Grid>
 						<Grid item xs={12}>
-							<img src={"../register_img.jpg"} className={classes.dangky_img} style={{ marginTop: 30 }} />
+							<img src={"../register_img.webp"} className={classes.dangky_img} style={{ marginTop: 30 }} />
 						</Grid>
 	
 				</div>

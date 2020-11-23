@@ -97,7 +97,7 @@ function PageTwo() {
               <Grid item xs={12} className={classes.banner}>
                 <div className={classes.col1}>
                   <div className={classes.logo}>
-                    <LazyLoadImage effect="blur"  className={classes.logovn} src={"../logo-03.png"} />
+                    <LazyLoadImage effect="blur"  className={classes.logovn} src={"../logo-03.webp"} />
                       <h5 className={classes.commingsoon}>
                         
                         HỖ TRỢ ỔN ĐỊNH <br/>
