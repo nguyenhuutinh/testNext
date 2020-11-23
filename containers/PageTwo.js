@@ -92,33 +92,18 @@ function PageTwo() {
               justify="center"
               alignContent="center"
               spacing={0}
-              style={{ marginLeft: "0rem" }}
             >
               <Grid item xs={12} className={classes.banner}>
                 <div className={classes.col1}>
                   <div className={classes.logo}>
                     <LazyLoadImage effect="blur"  className={classes.logovn} src={"../logo-03.webp"} />
-                      <h5 className={classes.commingsoon}>
+                      {/* <h5 className={classes.commingsoon}>
                         
                         HỖ TRỢ ỔN ĐỊNH <br/>
                         ĐƯỜNG HUYẾT HIỆU QUẢ 
                        
-                      </h5>
+                      </h5> */}
                     </div>
-                    {/* <Link to="/cart" rel="noopener noreferrer" className={styles.action}>
-                      <Badge
-                        count={
-                          (currentCart.single ? currentCart.single.quantity : 0) +
-                          (currentCart.combo ? currentCart.combo.quantity : 0)
-                        }
-                        style={{ marginRight: 10, }}
-                      >
-                        <ShoppingCartOutlined
-                          className={styles.shoppingCart}
-                          style={{ paddingLeft: 10, paddingRight: 10,  fontSize: 22 }}
-                        />
-                      </Badge>
-                    </Link> */}
                   </div>
                   <div className={classes.col2}>
                     <div className={classes.mainbow}>
