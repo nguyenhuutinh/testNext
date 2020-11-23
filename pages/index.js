@@ -11,11 +11,11 @@ export default function Home() {
   return (
     <>
       <PageOne />
-      <PageTwo />
+      {/* <PageTwo />
       <PageThree />
       <PageFour />
       <PageFive />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
