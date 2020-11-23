@@ -12,7 +12,7 @@ import { NativeSelect, Select, TextField } from "@material-ui/core";
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 const useStyles = makeStyles((theme) => ({
   formdangky:{
-  backgroundImage: "url('../register_bg.png')",
+  backgroundImage: "url('../register_bg.jpg')",
   backgroundSize: "cover"
   },
 	dangky_img:{
@@ -281,7 +281,7 @@ function PageFive() {
 							</form>
 						</Grid>
 						<Grid item xs={12}>
-							<img src={"../register_img.png"} className={classes.dangky_img} style={{ marginTop: 30 }} />
+							<img src={"../register_img.jpg"} className={classes.dangky_img} style={{ marginTop: 30 }} />
 						</Grid>
 	
 				</div>
