@@ -31,7 +31,8 @@ export default function Home() {
      <Page11 />
      <Page12 />
      <Page13 />
-      {/*  <Footer /> */}
+     <PageFive />
+       <Footer />
     </>
   );
 }

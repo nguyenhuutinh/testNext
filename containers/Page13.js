@@ -23,7 +23,7 @@ const baochi = [{
 },
 {
 	content:"https://ngoisao.vn/suc-khoe/cham-soc-suc-khoe/nghe-si-chi-tai-chia-se-hanh-trinh-on-dinh-duong-huyet-voi-mi-kieu-mach-old-henry-305936.htm",
-	image: "../ngoisao.png"
+	image: "../ngoisao.jpg"
 },
 {
 	content:"https://thethaovanhoa.vn/ban-can-biet/danh-hai-chi-tai-chia-se-hanh-trinh-on-dinh-duong-huyet-voi-mi-kieu-mach-sieu-thuc-phamit-ai-biet-n20201028152213452.htm",
@@ -36,7 +36,7 @@ const useStyles = makeStyles(() => ({
 		
 	},
 	header1: {
-		// font-family: 'UTMCenturBold';
+		fontFamily: 'FSDiavloRegular',
 		fontSize: "1.4rem",
 		marginTop: "20px",
 		color: "#084f1f",
@@ -77,12 +77,14 @@ function Page12() {
 							<br />
 							<h2 className={classes.header1}>TRUYỀN THÔNG NÓI VỀ<br/>MÌ KIỀU MẠCH OLD HENRY</h2>
 						
-						
+							<Grid container spacing={0}>
+
 								{baochi.map((item, index)=>{
-									return <Grid>
+									return <Grid item lg={6} xs={6} md={6}> 
 									<div className={classes.baochiImage}><a href={item.content} target="_blank"><LazyLoadImage effect="blur"   style={{width:'100%', height:'auto' }} src={item.image}/></a></div>
 								</Grid>
 								})}
+								</Grid>
             </Grid> 
           
           </div>
