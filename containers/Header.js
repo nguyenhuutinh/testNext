@@ -54,10 +54,10 @@ const useStyles = makeStyles((theme) => ({
 
 function Header() {
   const classes = useStyles();
-  useEffect(() => {
-    setTouchDevice("ontouchstart" in document.documentElement);
-  }, []);
-  const [touchDevice, setTouchDevice] = useState(true);
+  // useEffect(() => {
+  //   setTouchDevice("ontouchstart" in document.documentElement);
+  // }, []);
+  // const [touchDevice, setTouchDevice] = useState(true);
   return (
     <>
       {(

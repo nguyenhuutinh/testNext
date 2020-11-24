@@ -17,6 +17,7 @@ export default class MyDocument extends Document {
             async
             src={`https://www.googletagmanager.com/gtag/js?id=GTM-PLT8FM9`}
           />
+          <link rel="dns-prefetch" href="//www.googletagmanager.com"></link>
           <script
               dangerouslySetInnerHTML={{
                 __html: `

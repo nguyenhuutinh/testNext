@@ -78,10 +78,10 @@ function PageTwo() {
   const { height } = useWindowDimensions();
   const halfHeight = height / 6;
   const imgHeight = height + halfHeight;
-  useEffect(() => {
-    setTouchDevice("ontouchstart" in document.documentElement);
-  }, []);
-  const [touchDevice, setTouchDevice] = useState(false);
+  // useEffect(() => {
+  //   setTouchDevice("ontouchstart" in document.documentElement);
+  // }, []);
+  // const [touchDevice, setTouchDevice] = useState(false);
   return (
     <>
        
