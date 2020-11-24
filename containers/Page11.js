@@ -68,9 +68,9 @@ function Page11() {
 							<video
 								controls
 								data-automation="FootageHero_heroVideo_video"
-								autoplay="true"
+								autoplay="false"
 								preload="auto"
-								loop="loop"
+								loop="none"
 								muted="muted"
 								webkit-playsinline="true"
 								playsinline="true"
