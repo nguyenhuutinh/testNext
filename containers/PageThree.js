@@ -28,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   advantage:{
+    width:"100%",
     marginTop: "10p",
     marginBottom: "10px"
   }
