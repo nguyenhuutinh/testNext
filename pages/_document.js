@@ -10,7 +10,7 @@ export default class MyDocument extends Document {
         <Head>
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
-          <link async href="/fonts/style.css" rel="stylesheet"/>
+          {/* <link async href="/fonts/style.css" rel="stylesheet"/> */}
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=GTM-PLT8FM9`}
