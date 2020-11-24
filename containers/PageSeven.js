@@ -62,7 +62,7 @@ function PageSix() {
   const classes = useStyles();
   const [touchDevice, setTouchDevice] = useState(false);
   useEffect(() => {
-    setTouchDevice("touchstart" in document.documentElement);
+    setTouchDevice("ontouchstart" in document.documentElement);
   }, []);
   const [, setPhotoIndex ] = useState(0);
 	const [, setOpen ] = useState(false);

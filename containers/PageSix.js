@@ -90,7 +90,7 @@ function PageSix() {
   const halfHeight = height / 3;
   const [touchDevice, setTouchDevice] = useState(false);
   useEffect(() => {
-    setTouchDevice("touchstart" in document.documentElement);
+    setTouchDevice("ontouchstart" in document.documentElement);
   }, []);
 
   const openMessenger = () => {

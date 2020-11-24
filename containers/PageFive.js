@@ -187,7 +187,7 @@ function PageFive() {
   const [selectedValue, setSelectiveValue] = useState(0);
   const selectRef = useRef()
   useEffect(() => {
-    setTouchDevice("touchstart" in document.documentElement);
+    setTouchDevice("ontouchstart" in document.documentElement);
     
   }, []);
   const handleClickOutside = (event)=>{

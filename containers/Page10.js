@@ -41,7 +41,7 @@ function PageSix() {
 
   const [, setTouchDevice] = useState(false);
   useEffect(() => {
-    setTouchDevice("touchstart" in document.documentElement);
+    setTouchDevice("ontouchstart" in document.documentElement);
   }, []);
  
   
