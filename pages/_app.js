@@ -1,7 +1,15 @@
 import "../styles/globals.css";
 import Head from "next/head";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+
+import TagManager from 'react-gtm-module'
+const tagManagerArgs = {
+  id: 'GTM-XXXX'
+}
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    TagManager.initialize(tagManagerArgs)
+  }, [])
+  
   return (
     <>
       <Head>

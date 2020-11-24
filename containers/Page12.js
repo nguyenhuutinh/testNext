@@ -6,6 +6,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Container, Grid } from "@material-ui/core";
 
 import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 // import Rating from '@material-ui/lab/Rating';
 
 

@@ -6,6 +6,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Container, Grid } from "@material-ui/core";
 import "react-image-lightbox/style.css"
 import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Lightbox from 'react-image-lightbox';
 const images_large = [ "../g1.webp", "../g2.webp" ];
 const images = [ "../g1.jpg", "../g2.jpg" ];
