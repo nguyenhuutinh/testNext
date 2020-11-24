@@ -138,11 +138,23 @@ const useStyles = makeStyles((theme) => ({
     whiteSpace: "pre-wrap"
   },
   selectValue : {
-    marginLeft: "15px",
+    
     fontSize: "15px",
-    marginTop: "10px",
+    padding: "10px",
+    paddingLeft: "15px",
     fontWeight: 500,
-    whiteSpace: "pre-wrap"
+    whiteSpace: "pre-wrap",
+    background: "white",
+    "&:hover" :{
+      background: "beige"
+    },
+    "&:active" :{
+      background: "beige"
+    }
+  },
+  selectedValue:{
+    padding: "6px",
+    paddingLeft: "10px"
   },
   strikethrough:{
     position: "relative",
@@ -173,9 +185,10 @@ function PageFive() {
   const halfHeight = height / 6;
   const imgHeight = height + halfHeight;
   const [isSelectVisible, setSelectVisible] = useState(false);
+  const [selectedValue, setSelectiveValue] = useState(0);
   const selectRef = useRef()
   useEffect(() => {
-    setTouchDevice("ontouchstart" in document.documentElement);
+    setTouchDevice("touchstart" in document.documentElement);
     
   }, []);
   const handleClickOutside = (event)=>{
@@ -191,9 +204,13 @@ function PageFive() {
     }
   }, [])
   const [touchDevice, setTouchDevice] = useState(false);
+  const changeSelectValue = (value)=>{
+    setSelectiveValue(value)
+    setSelectVisible(false)
+  }
   return (
     <>
-      {touchDevice ? (
+      {true ? (
         <>
           <Container disableGutters> 
             <Grid
@@ -234,18 +251,33 @@ function PageFive() {
                 <input className={classes.register_input}  placeholder="Số Điện Thoại"  id="phone_number" name="phone_number" required  />
 								<div className={classes.register_input, classes.select } ref={selectRef}>
                   <div className={classes.selectContent} onClick={()=>setSelectVisible(!isSelectVisible)}>  
-                      <div></div>
+                      <div >{selectedValue == 0 ? <div value={10}  className={classes.selectValue, classes.selectedValue}>10 gói dùng thử:{' '}
+												<span style={{ color: 'red', fontWeight: 'bold' }}>399.000đ</span>{' '}
+												<b>(10 gói)</b></div> : selectedValue == 1 ? <div className={classes.selectValue}>1 hộp 30 gói chỉ còn{' '}
+												<span style={{ color: 'red', fontWeight: 'bold' }}>960.000đ</span>{' '}
+												<span className={classes.strikethrough} style={{ fontSize: 11 }}>
+													1.200.000đ{' '}
+												</span>{' '}
+												<span style={{ color: 'red', fontWeight: 'normal' }}>(giảm -20%)</span></div>
+                      : <div value={30} className={classes.selectValue}>2 hộp 60 gói chỉ còn{' '}
+                      <span style={{ color: 'red', fontWeight: 'bold' }}>
+                        1.800.000đ{' '}
+                      </span>{' '}
+                      <span className={classes.strikethrough} style={{ fontSize: 11 }}>
+                        2.400.000đ
+                      </span>{' '}
+                      <span style={{ color: 'red', fontWeight: 'bold' }}>(giảm -25%)</span></div> }</div>
                       <KeyboardArrowDownIcon className={classes.select_arrow} />
                   </div>
                   <div className={classes.dropDown} style={{display: isSelectVisible ? "" : "none"}}>
-                  <div >
-                    <div className={classes.group}>
+                  <div onClick={()=>changeSelectValue(0)}>
+                    <div className={classes.group} >
                     Dùng Thử
                     </div>
                       <div value={10}  className={classes.selectValue}>10 gói dùng thử:{' '}
 												<span style={{ color: 'red', fontWeight: 'bold' }}>399.000đ</span>{' '}
 												<b>(10 gói)</b></div></div>
-                      <div label="1 Hộp">
+                      <div onClick={()=>changeSelectValue(1)}>
                       <div className={classes.group}>
                       1 Hộp
                     </div>
@@ -257,7 +289,7 @@ function PageFive() {
 												<span style={{ color: 'red', fontWeight: 'normal' }}>(giảm -20%)</span></div>
                       </div>
                       
-                      <div >
+                      <div onClick={()=>changeSelectValue(2)}>
                       <div className={classes.group}>
                       3 Hộp
                     </div>

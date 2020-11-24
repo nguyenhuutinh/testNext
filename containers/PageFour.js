@@ -49,7 +49,7 @@ function PageFour() {
   const halfHeight = height / 3;
   const [touchDevice, setTouchDevice] = useState(false);
   useEffect(() => {
-    setTouchDevice("ontouchstart" in document.documentElement);
+    setTouchDevice("touchstart" in document.documentElement);
   }, []);
   return (
     <><div className={classes.root}>
@@ -59,7 +59,7 @@ function PageFour() {
           alignContent="center"
           justify="center"
         >
-          {touchDevice ?
+          {true ?
             <div className={classes.promovideo}>
               <div className={classes.videotitle}>
                 <LazyLoadImage effect="blur" className={classes.text1} src={"../mbtext1.png"} />
@@ -69,7 +69,7 @@ function PageFour() {
                 className={classes.videoitem}
                 controls
                 data-automation="MIKIEUMACH_OLDHENRY_heroVideo_video"
-                autoplay="false"
+                autoPlay="false"
                 preload="auto"
                 loop="loop"
                 muted="muted"
