@@ -16,23 +16,26 @@ import Page13 from "../containers/Page13";
 import Footer from "../containers/Footer";
 
 export default function Home() {
+
+
+
   return (
     <>
       {/* <PageOne /> */}
       <PageTwo />
       <PageThree />
       <PageFour />
-     <PageFive />
-     <PageSix />
-     {/* <PageSeven />
-     <PageEight />
-     <Page9 />
-     <Page10 />
-     <Page11 />
-     <Page12 />
-     <Page13 />
-     <PageFive /> */}
-       <Footer />
+      <PageFive />
+      <PageSix />
+      <PageSeven />
+      <PageEight />
+      <Page9 />
+      <Page10 />
+      <Page11 />
+      <Page12 />
+      <Page13 />
+      <PageFive />
+      <Footer />
     </>
   );
 }
