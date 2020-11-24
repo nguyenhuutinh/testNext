@@ -141,7 +141,7 @@ const useStyles = makeStyles((theme) => ({
     
     fontSize: "15px",
     padding: "10px",
-    paddingLeft: "15px",
+    paddingLeft: "20px",
     fontWeight: 500,
     whiteSpace: "pre-wrap",
     background: "white",
@@ -152,21 +152,39 @@ const useStyles = makeStyles((theme) => ({
       background: "beige"
     }
   },
+  active:{
+    background: "beige"
+  },
+  inactive:{
+    background: "white"
+  },
   selectedValue:{
     padding: "6px",
-    paddingLeft: "10px"
+    paddingLeft: "10px",
+    whiteSpace: "nowrap",
+    textOverflow: "ellipsis",
+    height: "25px",
+    alignItems:"center",
+    overflow: 'hidden',
+    background: "white",
+    "&:hover" :{
+      background: "white"
+    },
+    "&:active" :{
+      background: "white"
+    }
   },
   strikethrough:{
     position: "relative",
     fontSize: "18px",
     fontWeight: "500",
     display: "inline-block",
-    "&::before" :{
+    "&:before" :{
       position: "absolute",
-      content: "",
-      left: "0",
+      content: '""',
+      left: 0,
       top: "50%",
-      right: "0",
+      right: 0,
       borderTop: "1px solid",
       borderColor: "inherit",
       webkitTransform: "rotate(-5deg)",
@@ -251,15 +269,15 @@ function PageFive() {
                 <input className={classes.register_input}  placeholder="Số Điện Thoại"  id="phone_number" name="phone_number" required  />
 								<div className={classes.register_input, classes.select } ref={selectRef}>
                   <div className={classes.selectContent} onClick={()=>setSelectVisible(!isSelectVisible)}>  
-                      <div >{selectedValue == 0 ? <div value={10}  className={classes.selectValue, classes.selectedValue}>10 gói dùng thử:{' '}
+                      <div style={{width: "90%", position:'relative'}} >{selectedValue == 0 ? <div value={10}  className={classes.selectValue, classes.selectedValue}>10 gói dùng thử:{' '}
 												<span style={{ color: 'red', fontWeight: 'bold' }}>399.000đ</span>{' '}
-												<b>(10 gói)</b></div> : selectedValue == 1 ? <div className={classes.selectValue}>1 hộp 30 gói chỉ còn{' '}
+												<b>(10 gói)</b></div> : selectedValue == 1 ? <div className={classes.selectValue, classes.selectedValue}>1 hộp 30 gói chỉ còn{' '}
 												<span style={{ color: 'red', fontWeight: 'bold' }}>960.000đ</span>{' '}
 												<span className={classes.strikethrough} style={{ fontSize: 11 }}>
 													1.200.000đ{' '}
 												</span>{' '}
 												<span style={{ color: 'red', fontWeight: 'normal' }}>(giảm -20%)</span></div>
-                      : <div value={30} className={classes.selectValue}>2 hộp 60 gói chỉ còn{' '}
+                      : <div value={30} className={`${classes.selectValue}  ${classes.selectedValue}`}>2 hộp 60 gói chỉ còn{' '}
                       <span style={{ color: 'red', fontWeight: 'bold' }}>
                         1.800.000đ{' '}
                       </span>{' '}
@@ -271,17 +289,18 @@ function PageFive() {
                   </div>
                   <div className={classes.dropDown} style={{display: isSelectVisible ? "" : "none"}}>
                   <div onClick={()=>changeSelectValue(0)}>
-                    <div className={classes.group} >
+                    
+                    <div className={classes.group}>
                     Dùng Thử
                     </div>
-                      <div value={10}  className={classes.selectValue}>10 gói dùng thử:{' '}
+                      <div className={`${classes.selectValue}  ${(selectedValue == 0 ? classes.active : classes.inactive)}`}>10 gói dùng thử:{' '}
 												<span style={{ color: 'red', fontWeight: 'bold' }}>399.000đ</span>{' '}
 												<b>(10 gói)</b></div></div>
                       <div onClick={()=>changeSelectValue(1)}>
                       <div className={classes.group}>
                       1 Hộp
                     </div>
-                      <div value={20} className={classes.selectValue}>1 hộp 30 gói chỉ còn{' '}
+                      <div className={`${classes.selectValue}  ${(selectedValue == 1 ? classes.active : classes.inactive)}`}>1 hộp 30 gói chỉ còn{' '}
 												<span style={{ color: 'red', fontWeight: 'bold' }}>960.000đ</span>{' '}
 												<span className={classes.strikethrough} style={{ fontSize: 11 }}>
 													1.200.000đ{' '}
@@ -293,7 +312,7 @@ function PageFive() {
                       <div className={classes.group}>
                       3 Hộp
                     </div>
-                        <div value={30} className={classes.selectValue}>2 hộp 60 gói chỉ còn{' '}
+                        <div value={30} className={`${classes.selectValue}  ${(selectedValue == 2 ? classes.active : classes.inactive)}`}>2 hộp 60 gói chỉ còn{' '}
 												<span style={{ color: 'red', fontWeight: 'bold' }}>
 													1.800.000đ{' '}
 												</span>{' '}
