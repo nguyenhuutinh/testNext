@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import Head from "next/head";
-
+import {useEffect} from "react"
 import TagManager from 'react-gtm-module'
 const tagManagerArgs = {
   id: 'GTM-XXXX'
