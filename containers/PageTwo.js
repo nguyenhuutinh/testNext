@@ -43,6 +43,7 @@ const useStyles = makeStyles({
     alignItems: "center",
     justifyContent: "center",
     flexFlow: "row wrap",
+    textAlign: "center",
     "& img":{
       width: "100%"
     }
