@@ -8,7 +8,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Button, Container, Grid } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   product:{
-    backgroundColor: "white",
+    // backgroundColor: "white",
   },
   
 	img1:{
@@ -107,7 +107,7 @@ function PageSix() {
               <LazyLoadImage effect="blur"  className={classes.img1} src={"../Layer99.webp"} />
 
             </div>
-          <br/>
+          
           <h3 className={classes.title1}>Dùng 1 gói mì/ngày</h3>
             <p className={classes.p1}>Sử dụng 1 gói mì Old Henry mỗi ngày trong vòng 2-3 tháng để đạt được hiệu quả ổn định đường huyết từ đó hỗ trợ cắt hoặc giảm thuốc</p>
             <div className={classes.btnGroup}>
@@ -134,7 +134,7 @@ function PageSix() {
               <LazyLoadImage effect="blur"  className={classes.img1} src={"../Layer82.webp"} />
 
             </div>
-          <br/>
+          
           <h3 className={classes.title1}>Dễ dàng chế biến các món ăn</h3>
             <p className={classes.p1}>Sợi mì dai, ngon, rất dễ để chế biến các món mì theo sở thích của mỗi người. Bạn có thể xào,nấu, làm mì Ý… đều được</p>
             <div className={classes.btnGroup}>
@@ -161,7 +161,7 @@ function PageSix() {
               <LazyLoadImage effect="blur"  className={classes.img1} src={"../Layer76.webp"} />
 
             </div>
-          <br/>
+          
           <h3 className={classes.title1}>Hỗ trợ giao hàng toàn quốc</h3>
             <div className={classes.p1} style={{marginTop: 20}}>
             Khách hàng có thể đặt mì trực tiếp qua:<br/>
