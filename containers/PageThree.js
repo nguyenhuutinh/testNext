@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
   },
   advantage:{
     width:"100%",
-    marginTop: "10p",
+    marginTop: "10px",
     marginBottom: "10px"
   }
 }));
