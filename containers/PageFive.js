@@ -10,6 +10,7 @@ import Typography from "@material-ui/core/Typography";
 import useWindowDimensions from "../hooks/windowsize";
 import { NativeSelect, Select, TextField } from "@material-ui/core";
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
+import { useRouter } from 'next/router'
 
 import { Element, Link, scroller } from 'react-scroll';
 const useStyles = makeStyles((theme) => ({
@@ -187,7 +188,16 @@ function PageFive() {
   const imgHeight = height + halfHeight;
   const [isSelectVisible, setSelectVisible] = useState(false);
   const [selectedValue, setSelectiveValue] = useState(0);
+  const [isSubmitting, setSubmitting] = useState(false);
   const selectRef = useRef()
+  const fullNameRef = useRef()
+  const phoneRef = useRef()
+
+
+  const router = useRouter()
+
+
+
   useEffect(() => {
     setTouchDevice("ontouchstart" in document.documentElement);
     
@@ -208,6 +218,33 @@ function PageFive() {
   const changeSelectValue = (value)=>{
     setSelectiveValue(value)
     setSelectVisible(false)
+  }
+  const sendData = (name, phone, product) =>{
+    var xhr = new XMLHttpRequest()
+    var params = `your-name=${name}&tel-70=${phone}&text-815=${product}`;
+
+    // get a callback when the server responds
+    xhr.onreadystatechange = function() {//Call a function when the state changes.
+      if(xhr.readyState == 4 && xhr.status == 200) {
+        router.push(
+          `/thank-you?phone=${phone}&name=${name}&goi=${product}`
+        );
+      }
+    }
+    xhr.open('POST', 'https://www.mikieumach.vn/blog/wp-json/contact-form-7/v1/contact-forms/2057/feedback', true)
+    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+    // open the request with the verb and the url
+    
+    // send the request
+    xhr.send(params)
+  }
+  const submitData = (e, e1) =>{
+    e.preventDefault();
+    var fullname = fullNameRef.current.value
+    var phone = phoneRef.current.value
+    var product = selectedValue == 0 ? "10 Gói Dùng Thử" : selectedValue == 1 ?  "1 Hộp" : "3 Hộp"
+    sendData(fullname, phone, product)
   }
   return (
     <>
@@ -247,11 +284,11 @@ function PageFive() {
 								</ul>
 							</div>
               </Element>
-							<form className={classes.form} noValidate
-							
+							<form className={classes.form}
+							onSubmit={submitData}
 							>
-							  <input className={classes.register_input}  placeholder="Họ Tên"  id="full_name" name="full_name" required/>
-                <input className={classes.register_input}  placeholder="Số Điện Thoại"  id="phone_number" name="phone_number" required  />
+							  <input className={classes.register_input}  placeholder="Họ Tên"  id="full_name" name="full_name" required ref={fullNameRef}/>
+                <input className={classes.register_input}  placeholder="Số Điện Thoại"  id="phone_number" name="phone_number" required  ref={phoneRef}/>
 								<div className={classes.register_input, classes.select } ref={selectRef}>
                   <div className={classes.selectContent} onClick={()=>setSelectVisible(!isSelectVisible)}>  
                       <div style={{width: "90%", position:'relative'}} >{selectedValue == 0 ? <div value={10}  className={classes.selectValue, classes.selectedValue}>10 gói dùng thử:{' '}
@@ -310,7 +347,7 @@ function PageFive() {
                   
                 </div>
                 
-                <Button className={classes.register_btn}>
+                <Button type="submit" disabled={isSubmitting} className={classes.register_btn} >
 										ĐĂNG KÝ NGAY
 									</Button>
 								
