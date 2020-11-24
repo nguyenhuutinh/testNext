@@ -59,7 +59,7 @@ function PageFour() {
           alignContent="center"
           justify="center"
         >
-          {true ?
+          
             <div className={classes.promovideo}>
               <div className={classes.videotitle}>
                 <LazyLoadImage effect="blur" className={classes.text1} src={"../mbtext1.png"} />
@@ -81,10 +81,10 @@ function PageFour() {
                 <source src={"https://oldhenryvn.s3-ap-southeast-1.amazonaws.com/assets/chi-tai-preview.mp4"} type="video/mp4" />
               </video>
 
-            </div> : ""}
+            </div> 
         </Grid>
         </Container> 
-        </div>}
+  </div> }
     </>
   );
 }
