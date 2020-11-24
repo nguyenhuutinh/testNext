@@ -191,7 +191,7 @@ function PageFive() {
     
   }, []);
   const handleClickOutside = (event)=>{
-    if(selectRef && !selectRef.current.contains(event.target)){
+    if(selectRef && selectRef.current && !selectRef.current.contains(event.target)){
       setSelectVisible(false)
     }
   }
