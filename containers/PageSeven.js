@@ -7,8 +7,8 @@ import { Container, Grid } from "@material-ui/core";
 
 import { Carousel } from 'react-responsive-carousel';
 
-
-const images = [ "../g1.webp", "../g2.webp" ];
+const images_large = [ "../g1.webp", "../g2.webp" ];
+const images = [ "../g1.jpg", "../g2.jpg" ];
 const useStyles = makeStyles(() => ({
   certpart:{
     backgroundImage: "url('../bg.jpg')",

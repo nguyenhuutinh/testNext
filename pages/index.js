@@ -12,6 +12,7 @@ import Page9 from "../containers/Page9";
 import Page10 from "../containers/Page10";
 import Page11 from "../containers/Page11";
 import Page12 from "../containers/Page12";
+import Page13 from "../containers/Page13";
 import Footer from "../containers/Footer";
 
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
      <Page10 />
      <Page11 />
      <Page12 />
+     <Page13 />
       {/*  <Footer /> */}
     </>
   );

@@ -90,32 +90,32 @@ const useStyles = makeStyles(() => ({
 		marginTop: "30px",
 		position: "relative"
 	},
-	rating: {
-		fontSize: "20px"
-	},
-	quote: {
-		display: "flex",
-		justifyContent: "center",
-		alignItems: "center",
-		backgroundColor: "white",
-		zIndex: 100,
-		width: "80px",
-		height: "80px",
-		padding: "10px",
-		borderRadius: "50%",
-		webkitBoxShadow: "5px 5px 38px 5px rgba(0, 0, 0, 0.24)",
-		boxShadow: "5px 5px 38px 5px rgba(0, 0, 0, 0.14)",
-		top: "-30px",
-		left: "10px",
-		position: "absolute",
-		"& :before": {
-			fontFamily: "Font Awesome 5 Free",
-			fontWeight: 500,
-			content: '"\f10d" !important',
-			fontSize: "40px",
-			color: "rgb(231, 216, 0)"
-		}
-	}
+	// rating: {
+	// 	fontSize: "20px"
+	// },
+	// quote: {
+	// 	display: "flex",
+	// 	justifyContent: "center",
+	// 	alignItems: "center",
+	// 	backgroundColor: "white",
+	// 	zIndex: 100,
+	// 	width: "80px",
+	// 	height: "80px",
+	// 	padding: "10px",
+	// 	borderRadius: "50%",
+	// 	webkitBoxShadow: "5px 5px 38px 5px rgba(0, 0, 0, 0.24)",
+	// 	boxShadow: "5px 5px 38px 5px rgba(0, 0, 0, 0.14)",
+	// 	top: "-30px",
+	// 	left: "10px",
+	// 	position: "absolute",
+	// 	"& :before": {
+	// 		fontFamily: "Font Awesome 5 Free",
+	// 		fontWeight: 500,
+	// 		content: '"\f10d" !important',
+	// 		fontSize: "40px",
+	// 		color: "rgb(231, 216, 0)"
+	// 	}
+	// }
   
 }));
 
