@@ -7,7 +7,14 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, sans-serif;
     scroll-behavior: smooth;
 }
-
+@font-face {
+	font-weight: normal;
+	font-family: 'Font Awesome 5 Free';
+	font-style: normal;
+	src: url('/fonts/fa-solid-900.woff2') format('woff2'),
+         url('/fonts/fa-solid-900.woff') format('woff');
+	font-display: swap;
+}
 svg {
   height: 30px;
   cursor: pointer;
@@ -119,3 +126,4 @@ a{
     color: #084f1f;
     margin-right: 10px;
   }
+
