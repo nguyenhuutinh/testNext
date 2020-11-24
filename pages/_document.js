@@ -13,11 +13,12 @@ export default class MyDocument extends Document {
           <link async rel="preconnect" href="https://fonts.gstatic.com"/>
           <link async href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet"></link>
           {/* <link async href="/fonts/style.css" rel="stylesheet"/> */}
+          <link rel="dns-prefetch" href="//www.googletagmanager.com"></link>
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=GTM-PLT8FM9`}
           />
-          <link rel="dns-prefetch" href="//www.googletagmanager.com"></link>
+          
           <script
               dangerouslySetInnerHTML={{
                 __html: `
