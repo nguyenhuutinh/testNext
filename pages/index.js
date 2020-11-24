@@ -24,14 +24,14 @@ export default function Home() {
       <PageFour />
      <PageFive />
      <PageSix />
-     <PageSeven />
+     {/* <PageSeven />
      <PageEight />
      <Page9 />
      <Page10 />
      <Page11 />
      <Page12 />
      <Page13 />
-     <PageFive />
+     <PageFive /> */}
        <Footer />
     </>
   );
