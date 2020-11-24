@@ -10,6 +10,8 @@ import Typography from "@material-ui/core/Typography";
 import useWindowDimensions from "../hooks/windowsize";
 import { NativeSelect, Select, TextField } from "@material-ui/core";
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
+
+import { Element, Link, scroller } from 'react-scroll';
 const useStyles = makeStyles((theme) => ({
   formdangky:{
   backgroundImage: "url('../register_bg.jpg')",
@@ -227,6 +229,7 @@ function PageFive() {
 							<img src={'../Layer5.jpg'} className={classes.layer5} style={{ marginTop: 30 }} />
 						</Grid>
             <Grid item xs={12} style={{ paddingLeft: 10, paddingRight: 10 }}>
+            <Element name="formdangky" className="element">
 							<div className={classes.form_title}>
 								Đăng ký ngay hôm nay để nhận ưu đãi:<br />
 								<ul className={classes.itemUl}>
@@ -243,6 +246,7 @@ function PageFive() {
 									</li>
 								</ul>
 							</div>
+              </Element>
 							<form className={classes.form} noValidate
 							
 							>
