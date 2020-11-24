@@ -58,7 +58,7 @@ function PageSix() {
   
   
   return (
-    <> {touchDevice && <div >
+    <> {touchDevice &&
       <Container disableGutters >
         
         <div className={classes.video}>
@@ -101,7 +101,7 @@ function PageSix() {
           </div>
           <div style={{height: 1, background:'#084f1f'}}></div>
         </Container> 
-        </div>}
+        }
     </>
   );
 }

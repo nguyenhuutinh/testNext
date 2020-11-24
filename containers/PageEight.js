@@ -10,7 +10,7 @@ import { Button, Container, Grid } from "@material-ui/core";
 import { Carousel } from 'react-responsive-carousel';
 
 
-const images = [ "../g1.webp", "../g2.webp" ];
+
 const useStyles = makeStyles((theme) => ({
   productInfo:{
     backgroundColor: "#eff3f3",
@@ -74,7 +74,7 @@ function PageSix() {
   
   
   return (
-    <><div className={classes.root}>
+    <>
       {touchDevice && <Container disableGutters>
         <Grid item xs={12} >
             <LazyLoadImage effect="blur" className={classes.img1} src={"../Layer42.webp"} />
@@ -142,7 +142,7 @@ function PageSix() {
         </Grid>
         
       </Container> }
-        </div>
+       
     </>
   );
 }

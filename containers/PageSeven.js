@@ -69,7 +69,7 @@ function PageSix() {
   
   
   return (
-    <> {touchDevice && <div className={classes.root}>
+    <> {touchDevice &&
       <Container disableGutters>
         <Grid item xs={12}  className={classes.certpart}>
         <div className={classes.cert}>
@@ -98,7 +98,7 @@ function PageSix() {
           <br/>
           </Grid>
         </Container> 
-        </div>}
+       }
     </>
   );
 }

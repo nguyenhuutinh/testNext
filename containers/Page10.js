@@ -39,7 +39,7 @@ const useStyles = makeStyles(() => ({
 function PageSix() {
   const classes = useStyles();
 
-  const [, setTouchDevice] = useState(false);
+  const [touchDevice , setTouchDevice] = useState(false);
   useEffect(() => {
     setTouchDevice("ontouchstart" in document.documentElement);
   }, []);
@@ -47,8 +47,9 @@ function PageSix() {
   
   
   return (
-    <><div >
-      <Container disableGutters className={classes.loiich}>
+    <>
+      {touchDevice && <div>
+        <Container disableGutters className={classes.loiich}>
         <Grid item xs={12} >
           <h2 className={classes.header1}>Mì Kiều Mạch Old Henry<br/>dành cho ai?</h2>
 							<br/>
@@ -89,6 +90,7 @@ function PageSix() {
         </Container> 
         <div style={{height: 1, background:'#084f1f'}}></div>
         </div>
+       }
     </>
   );
 }

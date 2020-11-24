@@ -66,7 +66,7 @@ function PageSix() {
   
   
   return (
-    <> {touchDevice && <div className={classes.root}>
+    <> {touchDevice &&
       <Container disableGutters>
         <Grid item xs={12} className={classes.main}>
           <h3 className={classes.header1}>Lợi ích sức khoẻ của mì</h3>
@@ -87,7 +87,7 @@ function PageSix() {
         
         </Grid>
         </Container> 
-        </div>}
+       }
     </>
   );
 }

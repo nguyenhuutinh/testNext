@@ -41,7 +41,7 @@ function PageThree() {
   const [touchDevice, setTouchDevice] = React.useState(false);
   return (
     <>
-      <div className={classes.root}>
+      {<div className={classes.root}>
         <Container>
           <Grid
             container
