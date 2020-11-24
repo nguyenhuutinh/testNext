@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	leftvid : {
 		width: "100%",
-		video :{
+		"&>video" :{
 			width: "100%"
 		}
 	},
