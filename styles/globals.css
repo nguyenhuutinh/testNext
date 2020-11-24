@@ -20,3 +20,41 @@ h1,h2,h3,h4,h5{
 a{
   color: #084f1f;
 }
+
+.carousel .slide{
+  background: none !important;
+}
+
+.carousel .control-prev.control-arrow:before{
+	font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f100"!important;
+	color: rgb(12, 102, 0);
+    background: #ffe6b9d2;
+    padding: 10px;
+
+	border-right: 0px solid black !important;
+}
+.carousel .control-next.control-arrow:before{
+	font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f101"!important;
+	color: rgb(12, 102, 0);
+    background: #ffe6b9d2;
+    padding: 10px;
+
+	border-left: 0px solid black !important;
+}
+.carousel.carousel-slider .control-arrow:hover
+{
+	background-color: transparent !important;
+}
+
+.colorWeak {
+	filter: invert(80%);
+}
+.carousel .control-dots .dot{
+	opacity: 1 !important;
+}
+.ant-carousel .slick-dots-bottom{
+	bottom: -50px !important;
+}
+.carousel .control-dots .dot.selected{
+	background-color: #f9cd7d;
+}

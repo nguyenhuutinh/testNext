@@ -59,31 +59,7 @@ const useStyles = makeStyles((theme) => ({
     },
     fontFamily: "FSDiavloRegular",
 	},
-	right: {
-		backgroundColor: "#eff3f3",
-		
-		padding: "10px",
-		textAlign: "center",
-		h2: {
-			color: "#084f1f",
-			fontFamily: 'FSDiavloMedium'
-		},
-		h3: {
-			textTransform: "uppercase",
-			fontSize: "17px"
-		},
-		p :{
-			color: "black",
-			fontSize: "14px",
-			lineHeight: "16px",
-			// font-style: italic;
-			fontFamily: "Helvetica, sans-serif",
-			margin: "0 auto"
-
-    },
-    
-		
-  },
+	
   orderbutton: {
     boxShadow: "0px 4px 24px rgba(253,217,142)",
     color: "#444444",
@@ -212,6 +188,7 @@ function PageSix() {
               </Button>
             </div>
           </Grid>
+          <div style={{ height: 10, marginTop: 20, marginBottom: 20, width: '100%', backgroundColor: '#f2f5f5' }}> </div>
         </Container> 
         </div>
     </>
