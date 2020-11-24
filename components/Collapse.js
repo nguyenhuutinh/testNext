@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
 		}
 	},
 	box: {
-		background: white,
+		background: "white",
 		borderTop: '1px solid #d9d9d9',
 		color: '#084f1f',
 		padding: '16px',
