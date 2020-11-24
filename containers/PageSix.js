@@ -99,7 +99,7 @@ function PageSix() {
 			
 	};
   return (
-    <><div className={classes.root}>
+    <>{ touchDevice && <div className={classes.root}>
       <Container disableGutters>
         <Grid item xs={12} style={{paddingLeft:10, paddingRight: 10}}>
           <div className={classes.product}>
@@ -190,7 +190,7 @@ function PageSix() {
           </Grid>
           <div style={{ height: 10, marginTop: 20, marginBottom: 20, width: '100%', backgroundColor: '#f2f5f5' }}> </div>
         </Container> 
-        </div>
+        </div>}
     </>
   );
 }

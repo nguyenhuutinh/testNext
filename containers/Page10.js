@@ -1,17 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
-import useWindowDimensions from "../hooks/windowsize";
-import { Element, Link, scroller } from 'react-scroll';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import { Button, Container, Grid } from "@material-ui/core";
-
-import { Carousel } from 'react-responsive-carousel';
+import { Container, Grid } from "@material-ui/core";
 
 
-const images = [ "../g1.webp", "../g2.webp" ];
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   loiich:{
     // margin-top: 30px;
     background: "#f5f6fa",
@@ -45,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
 function PageSix() {
   const classes = useStyles();
 
-  const [touchDevice, setTouchDevice] = useState(false);
+  const [, setTouchDevice] = useState(false);
   useEffect(() => {
     setTouchDevice("touchstart" in document.documentElement);
   }, []);

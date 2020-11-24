@@ -2,16 +2,14 @@ import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 import useWindowDimensions from "../hooks/windowsize";
-import { Element, Link, scroller } from 'react-scroll';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import { Button, Container, Grid } from "@material-ui/core";
+import { Container, Grid } from "@material-ui/core";
 
 import { Carousel } from 'react-responsive-carousel';
 
 
 const images = [ "../g1.webp", "../g2.webp" ];
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   certpart:{
     backgroundImage: "url('../bg.jpg')",
     paddingTop: "30px",
@@ -62,23 +60,16 @@ const useStyles = makeStyles((theme) => ({
 
 function PageSix() {
   const classes = useStyles();
-  const { height } = useWindowDimensions();
-  const halfHeight = height / 3;
   const [touchDevice, setTouchDevice] = useState(false);
   useEffect(() => {
     setTouchDevice("touchstart" in document.documentElement);
   }, []);
-  const [ photoIndex, setPhotoIndex ] = useState(0);
-	const [ isOpen, setOpen ] = useState(false);
-  const handleChange = () => {
-		// console.log('a');
-		// window.open('tel:1900633084')
-			
-  };
+  const [, setPhotoIndex ] = useState(0);
+	const [, setOpen ] = useState(false);
   
   
   return (
-    <><div className={classes.root}>
+    <> {touchDevice && <div className={classes.root}>
       <Container disableGutters>
         <Grid item xs={12}  className={classes.certpart}>
         <div className={classes.cert}>
@@ -107,7 +98,7 @@ function PageSix() {
           <br/>
           </Grid>
         </Container> 
-        </div>
+        </div>}
     </>
   );
 }

@@ -1,17 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
-import useWindowDimensions from "../hooks/windowsize";
-import { Element, Link, scroller } from 'react-scroll';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Button, Container, Grid } from "@material-ui/core";
 
-import { Carousel } from 'react-responsive-carousel';
 
 
-const images = [ "../g1.webp", "../g2.webp" ];
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   main: {
     display: "flex",
     justifyContent: "center",
@@ -71,7 +66,7 @@ function PageSix() {
   
   
   return (
-    <><div className={classes.root}>
+    <> {touchDevice && <div className={classes.root}>
       <Container disableGutters>
         <Grid item xs={12} className={classes.main}>
           <h3 className={classes.header1}>Lợi ích sức khoẻ của mì</h3>
@@ -92,7 +87,7 @@ function PageSix() {
         
         </Grid>
         </Container> 
-        </div>
+        </div>}
     </>
   );
 }

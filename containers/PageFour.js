@@ -52,7 +52,7 @@ function PageFour() {
     setTouchDevice("touchstart" in document.documentElement);
   }, []);
   return (
-    <><div className={classes.root}>
+    <>{touchDevice && <div className={classes.root}>
       <Container>
         <Grid
           container
@@ -84,7 +84,7 @@ function PageFour() {
             </div> : ""}
         </Grid>
         </Container> 
-        </div>
+        </div>}
     </>
   );
 }

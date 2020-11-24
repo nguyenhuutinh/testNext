@@ -1,17 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
-import useWindowDimensions from "../hooks/windowsize";
-import { Element, Link, scroller } from 'react-scroll';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import { Button, Container, Grid } from "@material-ui/core";
-
-import { Carousel } from 'react-responsive-carousel';
+import { Container, Grid } from "@material-ui/core";
 
 
-const images = [ "../g1.webp", "../g2.webp" ];
-const useStyles = makeStyles((theme) => ({
+
+const useStyles = makeStyles(() => ({
   video:{
     paddingBottom: "40px"
   },
@@ -63,7 +58,7 @@ function PageSix() {
   
   
   return (
-    <><div >
+    <> {touchDevice && <div >
       <Container disableGutters >
         
         <div className={classes.video}>
@@ -106,7 +101,7 @@ function PageSix() {
           </div>
           <div style={{height: 1, background:'#084f1f'}}></div>
         </Container> 
-        </div>
+        </div>}
     </>
   );
 }
