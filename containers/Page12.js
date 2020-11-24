@@ -6,7 +6,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Container, Grid } from "@material-ui/core";
 
 import { Carousel } from 'react-responsive-carousel';
-import Rating from '@material-ui/lab/Rating';
+// import Rating from '@material-ui/lab/Rating';
 
 
 const testimo = [
@@ -119,7 +119,7 @@ const useStyles = makeStyles(() => ({
   
 }));
 
-function PageSix() {
+function Page12() {
   const classes = useStyles();
 
   const [touchDevice, setTouchDevice] = useState(false);
@@ -137,13 +137,14 @@ function PageSix() {
         <Grid item xs={12} style={{textAlign: 'center'}} >
 		<br />
 							<h2 className={classes.header1}>ĐÁNH GIÁ CỦA KHÁCH HÀNG</h2>
-							<Rating
+							{/* <Rating
          
           defaultValue={5}
 		  precision={0.5}
 		  size="large"
-          readOnly
-        />
+		  readOnly
+		  style={{marginTop: 10}}
+        /> */}
             </Grid> 
           <Grid style={{paddingLeft: 10, paddingRight: 10}}>
 			
@@ -216,4 +217,4 @@ function PageSix() {
   );
 }
 
-export default PageSix;
+export default Page12;
