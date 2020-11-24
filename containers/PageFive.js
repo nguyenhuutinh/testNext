@@ -8,7 +8,7 @@ import CardActions from "@material-ui/core/CardActions";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import useWindowDimensions from "../hooks/windowsize";
-import { NativeSelect, Select, TextField } from "@material-ui/core";
+import { CircularProgress, NativeSelect, Select, TextField } from "@material-ui/core";
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import { useRouter } from 'next/router'
 
@@ -230,6 +230,10 @@ function PageFive() {
           `/thank-you?phone=${phone}&name=${name}&goi=${product}`
         );
       }
+      console.log(xhr.readyState, xhr.status)
+      if(xhr.status != 0){
+        setSubmitting(false)
+      }
     }
     xhr.open('POST', 'https://www.mikieumach.vn/blog/wp-json/contact-form-7/v1/contact-forms/2057/feedback', true)
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
@@ -241,6 +245,7 @@ function PageFive() {
   }
   const submitData = (e, e1) =>{
     e.preventDefault();
+    setSubmitting(true)
     var fullname = fullNameRef.current.value
     var phone = phoneRef.current.value
     var product = selectedValue == 0 ? "10 Gói Dùng Thử" : selectedValue == 1 ?  "1 Hộp" : "3 Hộp"
@@ -249,7 +254,7 @@ function PageFive() {
   return (
     <>
       {touchDevice ? (
-       
+       <div style={{position:'relative'}}>
           <Container disableGutters> 
             <Grid
               container
@@ -360,8 +365,13 @@ function PageFive() {
 				</div>
                 </Grid>
             </Grid>
+           
+
           </Container>
-      
+          {isSubmitting && <div style={{background: 'rgba(255, 255, 255, 0.5)', width: '100%', height:'100%', position:'absolute', top: "0", left:"0", display:'flex', justifyContent:'center', alignItems:'center'}}>
+            <CircularProgress color="green" />
+            </div>}
+      </div>
       ) : (
         <>
           
