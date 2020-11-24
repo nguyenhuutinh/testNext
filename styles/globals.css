@@ -100,3 +100,12 @@ a{
 	line-height: 30px;
 
 }
+
+.heart:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 500;
+    content: "\f21e" !important;
+    font-size: 20px;
+    color: #084f1f;
+    margin-right: 10px;
+  }

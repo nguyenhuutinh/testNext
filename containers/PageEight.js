@@ -65,24 +65,17 @@ const useStyles = makeStyles((theme) => ({
 
 function PageSix() {
   const classes = useStyles();
-  const { height } = useWindowDimensions();
-  const halfHeight = height / 3;
+
   const [touchDevice, setTouchDevice] = useState(false);
   useEffect(() => {
     setTouchDevice("touchstart" in document.documentElement);
   }, []);
-  const [ photoIndex, setPhotoIndex ] = useState(0);
-	const [ isOpen, setOpen ] = useState(false);
-  const handleChange = () => {
-		// console.log('a');
-		// window.open('tel:1900633084')
-			
-  };
+ 
   
   
   return (
     <><div className={classes.root}>
-      <Container disableGutters>
+      {touchDevice && <Container disableGutters>
         <Grid item xs={12} >
             <LazyLoadImage effect="blur" className={classes.img1} src={"../Layer42.webp"} />
 
@@ -148,7 +141,7 @@ function PageSix() {
           {/* <div style={{ height: 10, marginTop: 20, marginBottom: 20, width: '100%', backgroundColor: '#f2f5f5' }}> </div> */}
         </Grid>
         
-        </Container> 
+      </Container> }
         </div>
     </>
   );

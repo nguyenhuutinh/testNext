@@ -62,19 +62,12 @@ const useStyles = makeStyles((theme) => ({
 
 function PageSix() {
   const classes = useStyles();
-  const { height } = useWindowDimensions();
-  const halfHeight = height / 3;
+
   const [touchDevice, setTouchDevice] = useState(false);
   useEffect(() => {
     setTouchDevice("touchstart" in document.documentElement);
   }, []);
-  const [ photoIndex, setPhotoIndex ] = useState(0);
-	const [ isOpen, setOpen ] = useState(false);
-  const handleChange = () => {
-		// console.log('a');
-		// window.open('tel:1900633084')
-			
-  };
+  
   
   
   return (
