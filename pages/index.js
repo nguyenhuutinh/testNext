@@ -144,7 +144,7 @@ function Home() {
   };
   const openNotification = () => {
     var i = getRandomInt(0, 29);
-    enqueueSnackbar(`${nameData[i]} ${productData[i]} ${"\n\n"} ${timeData[i]}`, {
+    enqueueSnackbar(`${nameData[i]} ${productData[i]} ${"\n\n"} ${timeData[i]} trước`, {
       variant: 'success',
       style: { whiteSpace: 'pre-line', float: 'right' },
 
