@@ -4,9 +4,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import useWindowDimensions from "../hooks/windowsize";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Container, Grid } from "@material-ui/core";
-
+import "react-image-lightbox/style.css"
 import { Carousel } from 'react-responsive-carousel';
-
+import Lightbox from 'react-image-lightbox';
 const images_large = [ "../g1.webp", "../g2.webp" ];
 const images = [ "../g1.jpg", "../g2.jpg" ];
 const useStyles = makeStyles(() => ({
@@ -58,14 +58,14 @@ const useStyles = makeStyles(() => ({
   }
 }));
 
-function PageSix() {
+function PageSeven() {
   const classes = useStyles();
   const [touchDevice, setTouchDevice] = useState(false);
   useEffect(() => {
     setTouchDevice("ontouchstart" in document.documentElement);
   }, []);
-  const [, setPhotoIndex ] = useState(0);
-	const [, setOpen ] = useState(false);
+  const [ photoIndex, setPhotoIndex ] = useState(0);
+	const [isOpen , setOpen ] = useState(false);
   
   
   return (
@@ -99,8 +99,25 @@ function PageSix() {
           </Grid>
         </Container> 
        }
+       {isOpen && (
+				<Lightbox
+					mainSrc={images_large[photoIndex]}
+					nextSrc={images_large[(photoIndex + 1) % images.length]}
+					prevSrc={images_large[(photoIndex + images.length - 1) % images.length]}
+					onCloseRequest={() => setOpen(false)}
+					onMovePrevRequest={() => setPhotoIndex((photoIndex + images.length - 1) % images.length)}
+					onMoveNextRequest={() => setPhotoIndex((photoIndex + 1) % images.length)}
+					imageTitle={
+						'Giấy chứng nhận Old Henry từ Viện Năng Suất Chất Lượng Deming tại Việt Nam'
+						
+					}
+					imageCaption={
+						'Giấy chứng nhận Old Henry từ Viện Năng Suất Chất Lượng Deming tại Việt Nam'
+					}
+				/>
+			)}
     </>
   );
 }
 
-export default PageSix;
+export default PageSeven;

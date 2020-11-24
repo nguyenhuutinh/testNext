@@ -58,7 +58,7 @@ const useStyles = makeStyles(() => ({
   
 }));
 
-function Page12() {
+function Page13() {
   const classes = useStyles();
 
   const [touchDevice, setTouchDevice] = useState(false);
@@ -80,7 +80,7 @@ function Page12() {
 							<Grid container spacing={0}>
 
 								{baochi.map((item, index)=>{
-									return <Grid item lg={6} xs={6} md={6}> 
+									return <Grid key={index} item lg={6} xs={6} md={6}> 
 									<div className={classes.baochiImage}><a href={item.content} target="_blank"><LazyLoadImage effect="blur"   style={{width:'100%', height:'auto' }} src={item.image}/></a></div>
 								</Grid>
 								})}
@@ -95,4 +95,4 @@ function Page12() {
   );
 }
 
-export default Page12;
+export default Page13;

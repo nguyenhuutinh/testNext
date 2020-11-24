@@ -163,14 +163,18 @@ function PageSix() {
             </div>
           <br/>
           <h3 className={classes.title1}>Hỗ trợ giao hàng toàn quốc</h3>
-            <p className={classes.p1}>
-            Khách hàng có thể đặt mì trực tiếp qua:<br/><p>1, Website:  {' '}
-            <a href="https://www.mikieumach.vn">www.mikieumach.vn</a></p>
+            <div className={classes.p1}>
+            Khách hàng có thể đặt mì trực tiếp qua:<br/>
+            <p>1, Website:  {' '}
+            <a href="https://www.mikieumach.vn">www.mikieumach.vn</a>
+            </p>
             
             <p>2, Facebook Fanpage: {' '}
-            <a href="https://www.facebook.com/Oldhenry.com.vn/">Old Henry - Mì Kiều Mạch</a></p>
-           <p> 3, Hotline: 1900 633 084</p>
+            <a href="https://www.facebook.com/Oldhenry.com.vn/">Old Henry - Mì Kiều Mạch</a>
             </p>
+
+             <p> 3, Hotline: 1900 633 084</p>
+            </div>
             <div className={classes.btnGroup}>
               <Link to="formdangky" spy={true} offset={-50} smooth={true} duration={500}>
                 <Button className="orderbutton">

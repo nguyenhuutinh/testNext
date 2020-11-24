@@ -47,7 +47,7 @@ const useStyles = makeStyles(() => ({
   
 }));
 
-function PageSix() {
+function Page11() {
   const classes = useStyles();
 
   const [touchDevice, setTouchDevice] = useState(false);
@@ -106,4 +106,4 @@ function PageSix() {
   );
 }
 
-export default PageSix;
+export default Page11;

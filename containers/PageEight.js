@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function PageSix() {
+function PageEight() {
   const classes = useStyles();
 
   const [touchDevice, setTouchDevice] = useState(false);
@@ -87,7 +87,7 @@ function PageSix() {
 									Thành phần: Bột mì, Bột kiều mạch Tartary, Bột lúa mạch cao nguyên, Bột mầm lúa mì,
 									Bột Konjac, Muối, Sodium Carbonat.
 								</p>
-								<p>
+								<div>
 									<p style={{ marginBottom: '10px' }}>Sản xuất theo Bản tự công bố: 01/TH/2020</p>
 									Hộp lớn ( 2.7 kg ) : 30 túi nhỏ x 90g <br />
 									Chiều cao: 310 mm <br />
@@ -97,9 +97,9 @@ function PageSix() {
 									<br />
 									Chiều cao: 240 mm <br />
 									Chiều rộng: 70 mm<br />
-								</p>
+								</div>
 								<br />
-								<p className={classes.productprice}>
+								<div className={classes.productprice}>
 									<ul className={classes.productItems}>
 										<li className={classes.productItem}>
 											10 gói Mì Kiều Mạch dùng thử: <b>399.000đ</b> (10 gói)<br />
@@ -119,7 +119,7 @@ function PageSix() {
 											<span className={classes.discount}>(giảm 25%)</span>
 										</li>
 									</ul>
-								</p>
+								</div>
 							</div>
 						
 						<br />
@@ -147,4 +147,4 @@ function PageSix() {
   );
 }
 
-export default PageSix;
+export default PageEight;
