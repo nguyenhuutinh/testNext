@@ -11,7 +11,7 @@ export default class MyDocument extends Document {
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
           {/* <link async href="/fonts/style.css" rel="stylesheet"/> */}
-          <script
+          {/* <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=GTM-PLT8FM9`}
           />
@@ -28,7 +28,7 @@ export default class MyDocument extends Document {
                 }) (window, document, 'script', 'dataLayer', 'GTM-ID');
             `,
               }}
-          />
+          /> */}
         </Head>
         <body>
           <Main />
