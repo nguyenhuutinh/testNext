@@ -1,4 +1,4 @@
-Official website for LiFit App!
+Official website for mikieumacholdhenry App!
 
 ## Tech
 

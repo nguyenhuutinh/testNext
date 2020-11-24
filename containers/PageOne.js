@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../components/navbar";
 import { makeStyles } from "@material-ui/core/styles";
 import Header from "./Header";
 
