@@ -13,7 +13,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 const useStyles = makeStyles({
   banner: {
     background: "url('../Group23.jpg')",
-    backgroundPosition: "bottom",
+    // backgroundPosition: "bottom",
     backgroundSize: "cover",
     // height: 60vh;
     width: "100%",
