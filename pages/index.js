@@ -5,6 +5,7 @@ import PageTwo from "../containers/PageTwo";
 import PageThree from "../containers/PageThree";
 import PageFour from "../containers/PageFour";
 import PageFive from "../containers/PageFive";
+import PageSix from "../containers/PageSix";
 import Footer from "../containers/Footer";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <PageThree />
       <PageFour />
      <PageFive />
+     <PageSix />
       {/*  <Footer /> */}
     </>
   );

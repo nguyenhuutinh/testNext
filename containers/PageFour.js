@@ -69,7 +69,7 @@ function PageFour() {
                 className={classes.videoitem}
                 controls
                 data-automation="MIKIEUMACH_OLDHENRY_heroVideo_video"
-                autoPlay="false"
+                autoPlay={false}
                 preload="auto"
                 loop="loop"
                 muted="muted"

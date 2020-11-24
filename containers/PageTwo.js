@@ -107,7 +107,7 @@ function PageTwo() {
                   </div>
                   <div className={classes.col2}>
                     <div className={classes.mainbow}>
-                    <LazyLoadImage effect="blur" className={classes.image} src={"../bowl.png"} />
+                    <LazyLoadImage effect="blur" className={classes.image} src={"../bowl.webp"} />
                     </div>
                   </div>
                 </Grid>
