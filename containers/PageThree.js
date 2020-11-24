@@ -41,7 +41,7 @@ function PageThree() {
   const [touchDevice, setTouchDevice] = React.useState(false);
   return (
     <>
-      {<div className={classes.root}>
+      {true && <div className={classes.root}>
         <Container>
           <Grid
             container
@@ -69,7 +69,7 @@ function PageThree() {
             </div>
           </Grid>
         </Container>
-      </div>
+      </div>}
     </>
   );
 }
