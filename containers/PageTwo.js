@@ -53,6 +53,7 @@ const useStyles = makeStyles({
     alignItems: "center"
   },
   logovn: {
+    minWidth: "100px",
     height: "100px"
   },
   commingsoon : {
