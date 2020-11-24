@@ -174,26 +174,7 @@ const useStyles = makeStyles((theme) => ({
       background: "white"
     }
   },
-  strikethrough:{
-    position: "relative",
-    fontSize: "18px",
-    fontWeight: "500",
-    display: "inline-block",
-    "&:before" :{
-      position: "absolute",
-      content: '""',
-      left: 0,
-      top: "50%",
-      right: 0,
-      borderTop: "1px solid",
-      borderColor: "inherit",
-      webkitTransform: "rotate(-5deg)",
-      mozTransform: "rotate(-5deg)",
-      msTransform: "rotate(-5deg)",
-      oTransform: "rotate(-5deg)",
-      transform: "rotate(-5deg)",
-    }
-  },
+  
  
 }));
 
@@ -273,7 +254,7 @@ function PageFive() {
 												<span style={{ color: 'red', fontWeight: 'bold' }}>399.000đ</span>{' '}
 												<b>(10 gói)</b></div> : selectedValue == 1 ? <div className={classes.selectValue, classes.selectedValue}>1 hộp 30 gói chỉ còn{' '}
 												<span style={{ color: 'red', fontWeight: 'bold' }}>960.000đ</span>{' '}
-												<span className={classes.strikethrough} style={{ fontSize: 11 }}>
+												<span className="strikethrough" style={{ fontSize: 11 }}>
 													1.200.000đ{' '}
 												</span>{' '}
 												<span style={{ color: 'red', fontWeight: 'normal' }}>(giảm -20%)</span></div>
@@ -281,7 +262,7 @@ function PageFive() {
                       <span style={{ color: 'red', fontWeight: 'bold' }}>
                         1.800.000đ{' '}
                       </span>{' '}
-                      <span className={classes.strikethrough} style={{ fontSize: 11 }}>
+                      <span className="strikethrough" style={{ fontSize: 11 }}>
                         2.400.000đ
                       </span>{' '}
                       <span style={{ color: 'red', fontWeight: 'bold' }}>(giảm -25%)</span></div> }</div>
@@ -302,7 +283,7 @@ function PageFive() {
                     </div>
                       <div className={`${classes.selectValue}  ${(selectedValue == 1 ? classes.active : classes.inactive)}`}>1 hộp 30 gói chỉ còn{' '}
 												<span style={{ color: 'red', fontWeight: 'bold' }}>960.000đ</span>{' '}
-												<span className={classes.strikethrough} style={{ fontSize: 11 }}>
+												<span className="strikethrough" style={{ fontSize: 11 }}>
 													1.200.000đ{' '}
 												</span>{' '}
 												<span style={{ color: 'red', fontWeight: 'normal' }}>(giảm -20%)</span></div>
@@ -316,7 +297,7 @@ function PageFive() {
 												<span style={{ color: 'red', fontWeight: 'bold' }}>
 													1.800.000đ{' '}
 												</span>{' '}
-												<span className={classes.strikethrough} style={{ fontSize: 11 }}>
+												<span className="strikethrough" style={{ fontSize: 11 }}>
 													2.400.000đ
 												</span>{' '}
 												<span style={{ color: 'red', fontWeight: 'bold' }}>(giảm -25%)</span></div>

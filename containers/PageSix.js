@@ -112,7 +112,7 @@ function PageSix() {
             <p className={classes.p1}>Sử dụng 1 gói mì Old Henry mỗi ngày trong vòng 2-3 tháng để đạt được hiệu quả ổn định đường huyết từ đó hỗ trợ cắt hoặc giảm thuốc</p>
             <div className={classes.btnGroup}>
               <Link to="formdangky" spy={true} offset={-50} smooth={true} duration={500}>
-                <Button className={classes.orderbutton}>
+                <Button className="orderbutton">
                   Đăng Ký Ngay
                 </Button>
               </Link>
@@ -139,7 +139,7 @@ function PageSix() {
             <p className={classes.p1}>Sợi mì dai, ngon, rất dễ để chế biến các món mì theo sở thích của mỗi người. Bạn có thể xào,nấu, làm mì Ý… đều được</p>
             <div className={classes.btnGroup}>
               <Link to="formdangky" spy={true} offset={-50} smooth={true} duration={500}>
-                <Button className={classes.orderbutton}>
+                <Button className="orderbutton">
                   Đăng Ký Ngay
                 </Button>
               </Link>
@@ -173,7 +173,7 @@ function PageSix() {
             </p>
             <div className={classes.btnGroup}>
               <Link to="formdangky" spy={true} offset={-50} smooth={true} duration={500}>
-                <Button className={classes.orderbutton}>
+                <Button className="orderbutton">
                   Đăng Ký Ngay
                 </Button>
               </Link>
