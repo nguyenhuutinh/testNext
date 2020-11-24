@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     // padding-right: 20px;
     paddingBottom: "10px",
     "& h5": {
-      fontFamily: 'FSDiavloRegular',
+      fontFamily: 'Oswald',
       fontSize: "1.4rem",
       // line-height: 1.3rem;
       color: "white",

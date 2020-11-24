@@ -35,7 +35,7 @@ const useStyles = makeStyles(() => ({
 		
 	},
 	header1: {
-		fontFamily: 'FSDiavloRegular',
+		fontFamily: 'Oswald',
 		fontSize: "1.4rem",
 		marginTop: "20px",
 		color: "#084f1f",

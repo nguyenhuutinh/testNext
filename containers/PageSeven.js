@@ -32,7 +32,7 @@ const useStyles = makeStyles(() => ({
   },
   certtitle: {
     color: "#23682b",
-    fontFamily: 'UTMCenturBold',
+    fontFamily: 'Oswald',
     padding: "10px",
     paddingLeft: "5px",
     paddingRight: "5px",
@@ -43,7 +43,7 @@ const useStyles = makeStyles(() => ({
   },
   cert_desc:{
     color: "#facd7a",
-    fontFamily: 'UTMCenturBold',
+    fontFamily: 'Oswald',
     padding: "10px",
     textTransform: "uppercase",
     fontSize: "15px",

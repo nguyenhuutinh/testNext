@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
 		textAlign: "center",
 		color: "black",
     marginTop: "-30px",
-    fontFamily: "FSDiavloRegular",
+    fontFamily: "Oswald",
 	},
 	p1: {
 		fontSize: "16px",
@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
 		"> a":{
 			// height: "20px"
     },
-    fontFamily: "FSDiavloRegular",
+    fontFamily: "Oswald",
 	},
 	
   orderbutton: {
@@ -76,7 +76,7 @@ const useStyles = makeStyles((theme) => ({
     // border-radius: 5px;
     border: "1px solid rgb(255, 189, 47)",
   //   height: 32px;
-    fontFamily: 'FSDiavloBold',
+    fontFamily: 'Oswald',
   //   line-height: 22px;
     background: "rgb(253,217,142)",
     background: "linear-gradient(267deg, rgb(255, 212, 119) 0%, rgb(255, 216, 142) 45%, rgba(255, 221, 158) 52%, rgb(255, 221, 158) 57%, rgb(255, 209, 110) 100%)"
@@ -163,7 +163,7 @@ function PageSix() {
             </div>
           <br/>
           <h3 className={classes.title1}>Hỗ trợ giao hàng toàn quốc</h3>
-            <div className={classes.p1}>
+            <div className={classes.p1} style={{marginTop: 20}}>
             Khách hàng có thể đặt mì trực tiếp qua:<br/>
             <p>1, Website:  {' '}
             <a href="https://www.mikieumach.vn">www.mikieumach.vn</a>

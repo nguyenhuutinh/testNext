@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
 		// padding-right: 20px;
 		paddingBottom: '10px',
 		'& h5': {
-			fontFamily: 'FSDiavloRegular',
+			fontFamily: 'Oswald',
 			fontSize: '1.4rem',
 			// line-height: 1.3rem;
 			color: 'white',
@@ -28,7 +28,8 @@ const useStyles = makeStyles((theme) => ({
 		borderBottomLeftRadius: '10px',
 		'border-bottom-right-radius': '10px',
 		'border-top-left-radius': '10px',
-		'border-top-right-radius': '10px'
+		'border-top-right-radius': '10px',
+		overflow: "hidden"
 	},
 	item: {
 		borderBottom: '1px solid #084f1f'
@@ -40,13 +41,15 @@ const useStyles = makeStyles((theme) => ({
 		color: 'rgba(0,0,0,.85)',
 		lineHeight: '1.5715',
 		cursor: 'pointer',
+		
 		transition: 'all .3s',
 		'& h2': {
 			color: '#084f1f',
-			fontFamily: 'FSDiavloBold',
+			fontFamily: 'Oswald',
 			marginBottom: '0',
 			fontSize: '1rem',
-			textTransform: 'uppercase'
+			textTransform: 'uppercase',
+			fontWeight: 500,
 		}
 	},
 	box: {
@@ -54,6 +57,7 @@ const useStyles = makeStyles((theme) => ({
 		borderTop: '1px solid #d9d9d9',
 		color: '#084f1f',
 		padding: '16px',
+		lineHeight: "28px",
 		fontWeight: 400
 	}
 }));
@@ -63,29 +67,29 @@ const Collapsed = () => {
 	const [ data, setData ] = useState([
 		{
 			id: 0,
-			header: '∑  ỔN ĐỊNH ĐƯỜNG HUYẾT',
+			header: ' ỔN ĐỊNH ĐƯỜNG HUYẾT',
 			desc: 'Giúp ổn định đường huyết trong máu một cách tự nhiên, an toàn và hiệu quả.'
 		},
 		{
 			id: 1,
-			header: '∑  CUNG CẤP PROTEIN DINH DƯỠNG',
+			header: ' CUNG CẤP PROTEIN DINH DƯỠNG',
 			desc:
 				'Protein tự nhiên được chiết xuất từ lúa mạch rất dồi dào. Nó có giá trị dinh dưỡng cao và là nguồn cung cấp calo và protein thực vật quan trọng.'
 		},
 		{
 			id: 2,
-			header: '∑  BỔ SUNG CHẤT XƠ KIỂM SOÁT CÂN NẶNG',
+			header: ' BỔ SUNG CHẤT XƠ KIỂM SOÁT CÂN NẶNG',
 			desc: 'Mì Old Henry giàu chất xơ, giúp bạn no lâu, ít thèm ăn, giúp kiểm soát cân nặng hiệu quả.'
 		},
 		{
 			id: 3,
-			header: '∑  HỖ TRỢ CẮT THUỐC SAU 3 THÁNG SỬ DỤNG',
+			header: ' HỖ TRỢ CẮT THUỐC SAU 3 THÁNG SỬ DỤNG',
 			desc:
 				'Tình trạng đường huyết sẽ được cải thiện sau 3 tháng sử dụng. Bạn có thể cắt giảm thuốc dần khi đường huyết đã ổn định.'
 		},
 		{
 			id: 4,
-			header: '∑  NGUYÊN LIỆU CAO CẤP',
+			header: ' NGUYÊN LIỆU CAO CẤP',
 			desc:
 				'Kiều mạch và lúa mạch cao cấp được trồng ở điều kiện không khí và nguồn nước sạch, không bị ô nhiễm nên rất lành mạnh và an toàn.'
 		}

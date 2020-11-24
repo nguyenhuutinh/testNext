@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
   
 
 footer: {
-  fontFamily:"FSDiavloRegular",
+  fontFamily:"Oswald",
   padding: "10px",
   // margin-top: 20px;
   paddingTop: "40px",
@@ -25,7 +25,7 @@ footer: {
   },
   h2: {
     color: "#012b1e",
-    fontFamily: 'FSDiavloBold',
+    fontFamily: 'Oswald',
     lineHeight: "24px",
     fontSize: "29px"
   }

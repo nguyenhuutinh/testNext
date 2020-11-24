@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	form_title: {
 		color: "#084f1f",
-		fontFamily: 'UTMCenturBold',
+		fontFamily: 'Oswald',
 		textAlign: "center",
 		fontSize: "21px",
 		marginTop: "40px",
@@ -89,7 +89,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "0 auto",
     marginTop: "20px",
 		display: "flex",
-		fontFamily: 'UTMCaviar',
+		fontFamily: 'Oswald',
 		justifyContent: 'center',
 		alignContent: "center",
 		color: "#084f1f",
@@ -237,7 +237,7 @@ function PageFive() {
 									<li className={classes.itemLi}>
 										Tư vấn <span style={{ color: 'red', fontWeight: 600 }}>miễn phí</span> phương
 										pháp hạ đường huyết.<br />Gọi ngay{' '}
-										<a style={{ color: 'green' }} href="tel:1900633084">
+										<a style={{ color: 'green', fontWeight: 500 }} href="tel:1900633084">
 											1900 63 30 84
 										</a>
 									</li>

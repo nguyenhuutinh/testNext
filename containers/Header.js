@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
       },
     logo:{
         padding: "10px 15px",
-        fontFamily: 'FSDiavloBold',
+        fontFamily: 'Oswald',
         fontSize: "24px",
         color: "#fddfa2",
         
@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     slogan: {
-        fontFamily: 'FSDiavloMedium',
+        fontFamily: 'Oswald',
         color: "#fad281",
         fontSize: "16px",
         lineHeight: "18px",

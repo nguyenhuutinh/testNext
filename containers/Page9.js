@@ -16,14 +16,14 @@ const useStyles = makeStyles(() => ({
     
   },
   header1: {
-    fontFamily: 'SVNShaded',
+    fontFamily: 'Oswald',
     fontSize: "30px",
     lineHeight: "30px",
     marginBottom: "10px",
     color:" #084f1f"
   }
   ,header2 :{
-    fontFamily: 'FSDiavloRegular',
+    fontFamily: 'Oswald',
 
     color: "#084f1f",
     fontSize: "1.1rem",
@@ -32,8 +32,9 @@ const useStyles = makeStyles(() => ({
   },
   desc: {
     fontSize: "1.1rem",
-    fontFamily: 'FSDiavloRegular',
-    color: "#030303"
+    fontFamily: 'Oswald',
+    color: "#030303",
+    fontWeight: 300
   },
   morebutton: {
     marginTop: "20px",

@@ -12,7 +12,7 @@ const useStyles = makeStyles(() => ({
   },
   
 	header1 :{
-		fontFamily: 'SVNShaded',
+		fontFamily: 'Oswald',
 		fontSize: "30px",
 		lineHeight: "30px",
 		marginBottom: "10px",
@@ -36,13 +36,13 @@ const useStyles = makeStyles(() => ({
   },
   h3 : {
     fontSize: "1.2rem",
-    fontFamily: 'FSDiavloRegular',
+    fontFamily: 'Oswald',
     color: "black"
   },
   h5  :{
     color: "#030303",
     fontSize: "1rem",
-    fontFamily: 'FSDiavloRegular',
+    fontFamily: 'Oswald',
   }
   
 }));

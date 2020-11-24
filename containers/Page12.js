@@ -54,7 +54,7 @@ const useStyles = makeStyles(() => ({
 		
 	},
 	header1: {
-		// font-family: 'UTMCenturBold';
+		// font-family: 'Oswald';
 		fontSize: "1.4rem",
 		marginTop: "20px",
 		textAlign: "center",

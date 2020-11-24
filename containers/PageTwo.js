@@ -57,7 +57,7 @@ const useStyles = makeStyles({
   },
   commingsoon : {
     // background-color: red;
-    fontFamily: 'FSDiavloMedium',
+    fontFamily: 'Oswald',
     fontSize: "1rem",
     display: "inline-flex",
     minWidth: "150px",
