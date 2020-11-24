@@ -30,6 +30,9 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: "30px",
     textAlign: "center"
   },
+  img1:{
+    width: "100%"
+  },
   productprice: {
     border: "1px dashed #02290e",
     fontSize: "16px",
