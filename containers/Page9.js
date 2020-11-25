@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Button, Container, Grid } from "@material-ui/core";
+import { useRouter } from 'next/router'
 
 
 
@@ -64,7 +65,7 @@ function Page9() {
     setTouchDevice("ontouchstart" in document.documentElement);
   }, []);
   
-  
+  const router = useRouter()
   
   return (
     <> {touchDevice &&
@@ -77,9 +78,9 @@ function Page9() {
 						className={classes.morebutton}
 						size="large"
 						type="default"
-						// onClick={() => {
-						// 	router.push(IS_VN ? '/loi-ich-suc-khoe' : '/health-benefits');
-						// }}
+						onClick={() => {
+							router.push('/loi-ich-suc-khoe');
+						}}
 					>
 					Tìm Hiểu Thêm
 					</Button>
