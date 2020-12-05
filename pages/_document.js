@@ -10,7 +10,16 @@ export default class MyDocument extends Document {
         <Head>
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
-          <link async rel="preconnect" href="https://fonts.gstatic.com"/>
+          <link async rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+          <link rel="preload"
+      as="style"
+      href="$CSS&display=swap" />
+<link rel="preload"
+      as="style"
+      href="$CSS" />
+<link rel="stylesheet"
+      href="$CSS&display=swap"
+      media="print" onload="this.media='all'" />
           <link async href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet"></link>
           {/* <link async href="/fonts/style.css" rel="stylesheet"/> */}
           {/* <link rel="dns-prefetch" href="//www.googletagmanager.com"></link>
