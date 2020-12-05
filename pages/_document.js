@@ -13,13 +13,13 @@ export default class MyDocument extends Document {
           <link async rel="preconnect" href="https://fonts.gstatic.com"/>
           <link async href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet"></link>
           {/* <link async href="/fonts/style.css" rel="stylesheet"/> */}
-          <link rel="dns-prefetch" href="//www.googletagmanager.com"></link>
+          {/* <link rel="dns-prefetch" href="//www.googletagmanager.com"></link>
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=GTM-PLT8FM9`}
-          />
+          /> */}
           
-          <script
+          {/* <script
               dangerouslySetInnerHTML={{
                 __html: `
                 (function(w, d, s, l, i){
@@ -32,7 +32,7 @@ export default class MyDocument extends Document {
                 }) (window, document, 'script', 'dataLayer', 'GTM-PLT8FM9');
             `,
               }}
-          />
+          /> */}
         </Head>
         <body>
         {/* <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXX"
