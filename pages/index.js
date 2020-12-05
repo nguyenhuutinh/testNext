@@ -17,6 +17,7 @@ import Footer from "../containers/Footer";
 import { SnackbarProvider, useSnackbar } from 'notistack';
 import { Button } from "@material-ui/core";
 import React ,{useEffect, useState} from 'react';
+import { Waypoint } from "react-waypoint";
 
 const timeData = [
   '1 phút',
