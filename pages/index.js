@@ -19,7 +19,7 @@ import { Button } from "@material-ui/core";
 import React ,{useEffect} from 'react';
 
 const timeData = [
-  '1 phút'
+  '1 phút',
   '10 phút',
   '30 phút',
   '11 phút',
