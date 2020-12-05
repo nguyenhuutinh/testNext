@@ -160,19 +160,19 @@ function Home() {
       
       {/* <PageOne /> */}
       <PageTwo />
-      <PageThree />
+      {/* <PageThree />
       <PageFour />
       <PageFive />
-      {/* <PageSix /> */}
+      <PageSix />
       <PageSeven />
       <PageEight />
       <Page9 />
       <Page10 />
-      {/* <Page11 /> */}
+      <Page11 />
       <Page12 />
       <Page13 />
       <PageFive />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
