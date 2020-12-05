@@ -166,19 +166,19 @@ function Home() {
       <PageTwo />
       <PageThree />
       <Waypoint onEnter={handleData}></Waypoint>
-
-      {show && <PageFour />}
-      {show && <PageFive />}
-     {show && <PageSix />}
-     {show && <PageSeven />}
-     {show &&  <PageEight />}
-     {show &&  <Page9 />}
-     {show &&  <Page10 />}
+{show && <div>
+      <PageFour />
+      <PageFive />
+     <PageSix />
+      <PageSeven />
+      <PageEight />
+      <Page9 />
+      <Page10 />
       <Page11 />
       <Page12 />
       <Page13 />
       <PageFive />
-      <Footer /> 
+      <Footer /> </div>}
     </>
   );
 }
