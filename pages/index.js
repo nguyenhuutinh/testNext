@@ -19,7 +19,7 @@ import { Button } from "@material-ui/core";
 import React ,{useEffect} from 'react';
 
 const timeData = [
-  '1 phút',
+  '1 phút'
   '10 phút',
   '30 phút',
   '11 phút',
@@ -163,12 +163,12 @@ function Home() {
       <PageThree />
       <PageFour />
       <PageFive />
-      <PageSix />
+      {/* <PageSix /> */}
       <PageSeven />
       <PageEight />
       <Page9 />
       <Page10 />
-      <Page11 />
+      {/* <Page11 /> */}
       <Page12 />
       <Page13 />
       <PageFive />
