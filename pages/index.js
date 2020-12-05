@@ -16,7 +16,7 @@ import Page13 from "../containers/Page13";
 import Footer from "../containers/Footer";
 import { SnackbarProvider, useSnackbar } from 'notistack';
 import { Button } from "@material-ui/core";
-import React ,{useEffect} from 'react';
+import React ,{useEffect, useState} from 'react';
 
 const timeData = [
   '1 phút',
@@ -154,20 +154,25 @@ function Home() {
       },
     })
   }
-
+  const [show, setShow] = useState(false)
+  const handleData = () =>{
+    setShow(true)
+  }
   return (
     <>
       
       {/* <PageOne /> */}
       <PageTwo />
       <PageThree />
-      <PageFour />
-      <PageFive />
-     <PageSix />
-      <PageSeven />
-      <PageEight />
-      <Page9 />
-      <Page10 />
+      <Waypoint onEnter={handleData}></Waypoint>
+
+      {show && <PageFour />}
+      {show && <PageFive />}
+     {show && <PageSix />}
+     {show && <PageSeven />}
+     {show &&  <PageEight />}
+     {show &&  <Page9 />}
+     {show &&  <Page10 />}
       <Page11 />
       <Page12 />
       <Page13 />
