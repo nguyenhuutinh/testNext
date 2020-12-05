@@ -160,10 +160,10 @@ function Home() {
       
       {/* <PageOne /> */}
       <PageTwo />
-      {/* <PageThree />
+      <PageThree />
       <PageFour />
       <PageFive />
-      <PageSix />
+     {/*  <PageSix />
       <PageSeven />
       <PageEight />
       <Page9 />
