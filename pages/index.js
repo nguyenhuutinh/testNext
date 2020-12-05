@@ -163,7 +163,7 @@ function Home() {
       <PageThree />
       <PageFour />
       <PageFive />
-     {/*  <PageSix />
+     <PageSix />
       <PageSeven />
       <PageEight />
       <Page9 />
@@ -172,7 +172,7 @@ function Home() {
       <Page12 />
       <Page13 />
       <PageFive />
-      <Footer /> */}
+      <Footer /> 
     </>
   );
 }
