@@ -164,9 +164,9 @@ function Home() {
       
       {/* <PageOne /> */}
       <PageTwo />
-      <Waypoint onEnter={handleData}></Waypoint>
-      <PageThree />
       
+      <PageThree />
+      <Waypoint onEnter={handleData}></Waypoint>
 {show && <div>
       <PageFour />
       <PageFive />
