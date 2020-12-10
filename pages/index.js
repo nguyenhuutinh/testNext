@@ -179,7 +179,7 @@ function Home() {
       <Page10 />
       <Page11 />
       <Page12 />
-      <Page13 />
+      {/* <Page13 /> */}
       <PageFive />
       <Footer /> </div>}
     </>
