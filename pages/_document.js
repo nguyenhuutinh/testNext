@@ -21,6 +21,21 @@ export default class MyDocument extends Document {
       href="$CSS&display=swap"
       media="print" onload="this.media='all'" />
           <link async href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet"></link>
+          <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-174020829-1"
+  />
+
+  <script
+    dangerouslySetInnerHTML={{
+      __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-174020829-1');
+        `,
+    }}
+  />
           {/* <link async href="/fonts/style.css" rel="stylesheet"/> */}
           {/* <link rel="dns-prefetch" href="//www.googletagmanager.com"></link>
           <script
