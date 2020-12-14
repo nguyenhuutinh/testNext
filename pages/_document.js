@@ -21,12 +21,12 @@ export default class MyDocument extends Document {
       href="$CSS&display=swap"
       media="print" onload="this.media='all'" />
           <link async href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet"></link>
-          <script
+          {/* <script
     async
     src="https://www.googletagmanager.com/gtag/js?id=UA-174020829-1"
-  />
+  /> */}
 
-  <script
+  {/* <script
     dangerouslySetInnerHTML={{
       __html: `
             window.dataLayer = window.dataLayer || [];
@@ -35,15 +35,15 @@ export default class MyDocument extends Document {
             gtag('config', 'UA-174020829-1');
         `,
     }}
-  />
+  /> */}
           {/* <link async href="/fonts/style.css" rel="stylesheet"/> */}
-          {/* <link rel="dns-prefetch" href="//www.googletagmanager.com"></link>
+          <link rel="dns-prefetch" href="//www.googletagmanager.com"></link>
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=GTM-PLT8FM9`}
-          /> */}
+          />
           
-          {/* <script
+          <script
               dangerouslySetInnerHTML={{
                 __html: `
                 (function(w, d, s, l, i){
@@ -56,11 +56,11 @@ export default class MyDocument extends Document {
                 }) (window, document, 'script', 'dataLayer', 'GTM-PLT8FM9');
             `,
               }}
-          /> */}
+          />
         </Head>
         <body>
-        {/* <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXX"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> */}
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <Main />
           <NextScript />
         </body>
