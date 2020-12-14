@@ -59,6 +59,7 @@ function Footer() {
 									<div>
 									{<a style={{color:'#012b1e', textDecoration:'underline'}} href="/chinh-sach-bao-mat">Chính sách bảo mật</a>}{<br/>}{<br/>}
 				{<a style={{color:'#012b1e', textDecoration:'underline'}} href="/dieu-khoan-su-dung">Điều khoản sử dụng</a>}
+        {<a style={{color:'#012b1e', textDecoration:'underline'}} href="/tuyen-bo-bai-tru-trach-nhiem">Tuyên Bố Bãi Trừ Trách Nhiệm</a>}
 				
 				{<br/>}{<br/>}
 				{<a style={{color:'#012b1e', textDecoration:'underline'}} href="/blog">Blog</a>}{<br/>}<br/>

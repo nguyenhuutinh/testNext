@@ -83,9 +83,9 @@ const Collapsed = () => {
 		},
 		{
 			id: 3,
-			header: ' HỖ TRỢ CẮT THUỐC SAU 3 THÁNG SỬ DỤNG',
+			header: ' HỖ TRỢ CẮT THUỐC SAU MỘT THỜI GIAN SỬ DỤNG',
 			desc:
-				'Tình trạng đường huyết sẽ được cải thiện sau 3 tháng sử dụng. Bạn có thể cắt giảm thuốc dần khi đường huyết đã ổn định.'
+				'Tình trạng đường huyết sẽ được cải thiện sau một thời gian sử dụng. Bạn có thể cắt giảm thuốc dần khi đường huyết đã ổn định.'
 		},
 		{
 			id: 4,

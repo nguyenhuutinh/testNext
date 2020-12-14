@@ -8,7 +8,7 @@ import PageOne from '../../containers/PageOne';
 import Footer from '../../containers/Footer';
 const useStyles = makeStyles((theme) => ({
 	intro:{
-		fontFamily: 'HelveticaNeue sans-serif',
+		// fontFamily: 'HelveticaNeue sans-serif',
 		marginTop: "100px",
 		fontSize: "18px",
 		color: "#444444",

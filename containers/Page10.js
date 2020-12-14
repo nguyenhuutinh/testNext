@@ -61,7 +61,7 @@ function Page10() {
 							</div>
 							<div style={{ color: '#2b2b2b', fontFamily:'Oswald', fontSize: 18, lineHeight: '25px',  marginTop: 10,fontWeight: 300 }}>
 								<b className="heart" />
-								<b style={{fontFamily:'Oswald', fontWeight: 500}}>Người bệnh đái tháo đường</b>: Thành phần dinh dưỡng trong kiều mạch và lúa mạch của Mì Old Henry có tác dụng giúp làm giảm cholesterol và ổn định đường huyết. Tình trạng đường huyết sẽ được cải thiện, có thể cắt giảm thuốc dần sau 3 tháng sử dụng.
+								<b style={{fontFamily:'Oswald', fontWeight: 500}}>Người bệnh đái tháo đường</b>: Thành phần dinh dưỡng trong kiều mạch và lúa mạch của Mì Old Henry có tác dụng giúp làm giảm cholesterol và ổn định đường huyết. Tình trạng đường huyết sẽ được cải thiện, có thể cắt giảm thuốc dần sau một thời gian sử dụng.
 							</div>
 
 							<div style={{ color: '#2b2b2b', fontFamily:'Oswald', fontSize: 18, lineHeight: '25px',  marginTop: 10,fontWeight: 300 }}>
