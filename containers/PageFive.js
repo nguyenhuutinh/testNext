@@ -248,7 +248,7 @@ function PageFive() {
     setSubmitting(true)
     var fullname = fullNameRef.current.value
     var phone = phoneRef.current.value
-    var product = selectedValue == 0 ? "1 Hộp" : "3 Hộp"
+    var product = selectedValue == 0 ? "1 Hộp" : "2 Hộp"
     sendData(fullname, phone, product)
   }
   return (
@@ -325,7 +325,7 @@ function PageFive() {
                       <div className={classes.group}>
                       1 Hộp
                     </div>
-                      <div className={`${classes.selectValue}  ${(selectedValue == 1 ? classes.active : classes.inactive)}`}>1 hộp 30 gói chỉ còn{' '}
+                      <div className={`${classes.selectValue}  ${(selectedValue == 0 ? classes.active : classes.inactive)}`}>1 hộp 30 gói chỉ còn{' '}
 												<span style={{ color: 'red', fontWeight: 'bold' }}>1.020.000đ</span>{' '}
 												<span className="strikethrough" style={{ fontSize: 11 }}>
 													1.200.000đ{' '}
@@ -337,7 +337,7 @@ function PageFive() {
                       <div className={classes.group}>
                       3 Hộp
                     </div>
-                        <div value={30} className={`${classes.selectValue}  ${(selectedValue == 2 ? classes.active : classes.inactive)}`}>2 hộp 60 gói chỉ còn{' '}
+                        <div value={30} className={`${classes.selectValue}  ${(selectedValue == 1 ? classes.active : classes.inactive)}`}>2 hộp 60 gói chỉ còn{' '}
 												<span style={{ color: 'red', fontWeight: 'bold' }}>
 													1.800.000đ{' '}
 												</span>{' '}
