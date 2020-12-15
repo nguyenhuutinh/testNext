@@ -335,7 +335,7 @@ function PageFive() {
                       
                       <div onClick={()=>changeSelectValue(1)}>
                       <div className={classes.group}>
-                      3 Hộp
+                      2 Hộp
                     </div>
                         <div value={30} className={`${classes.selectValue}  ${(selectedValue == 1 ? classes.active : classes.inactive)}`}>2 hộp 60 gói chỉ còn{' '}
 												<span style={{ color: 'red', fontWeight: 'bold' }}>
