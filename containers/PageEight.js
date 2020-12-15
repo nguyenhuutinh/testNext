@@ -107,7 +107,7 @@ function PageEight() {
 											<span className="strikethrough" style={{ fontSize: 12 }}>
 												1.200.000đ
 											</span>{' '}
-											<span className={classes.discount}>(giảm 20%)</span>
+											<span className={classes.discount}>(giảm 15%)</span>
 										</li>
 										<li className={classes.productItem}>
 											2 hộp 60 gói chỉ còn: <b>1.800.000đ</b>{' '}
