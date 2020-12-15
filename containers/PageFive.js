@@ -301,7 +301,7 @@ function PageFive() {
 												<span className="strikethrough" style={{ fontSize: 11 }}>
 													1.200.000đ{' '}
 												</span>{' '}
-												<span style={{ color: 'red', fontWeight: 'normal' }}>(giảm -20%)</span></div>
+												<span style={{ color: 'red', fontWeight: 'normal' }}>(giảm -15%)</span></div>
                       : <div value={30} className={`${classes.selectValue}  ${classes.selectedValue}`}>2 hộp 60 gói chỉ còn{' '}
                       <span style={{ color: 'red', fontWeight: 'bold' }}>
                         1.800.000đ{' '}
