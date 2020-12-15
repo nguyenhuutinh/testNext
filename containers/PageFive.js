@@ -321,7 +321,7 @@ function PageFive() {
                       <div className={`${classes.selectValue}  ${(selectedValue == 0 ? classes.active : classes.inactive)}`}>10 gói dùng thử:{' '}
 												<span style={{ color: 'red', fontWeight: 'bold' }}>399.000đ</span>{' '}
 												<b>(10 gói)</b></div></div> */}
-                      <div onClick={()=>changeSelectValue(1)}>
+                      <div onClick={()=>changeSelectValue(0)}>
                       <div className={classes.group}>
                       1 Hộp
                     </div>
@@ -333,7 +333,7 @@ function PageFive() {
 												<span style={{ color: 'red', fontWeight: 'normal' }}>(giảm -15%)</span></div>
                       </div>
                       
-                      <div onClick={()=>changeSelectValue(2)}>
+                      <div onClick={()=>changeSelectValue(1)}>
                       <div className={classes.group}>
                       3 Hộp
                     </div>
