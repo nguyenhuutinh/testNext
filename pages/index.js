@@ -97,35 +97,35 @@ const nameData = [
 ];
 const productData = [
   'đã đặt 2 hộp dùng thử với giá 1.800.000đ',
-  'đã đặt 1 hộp dùng thử với giá 960.000đ',
-  'đã đặt 10 gói dùng thử với giá 399.000đ',
-  'đã đặt 10 gói dùng thử với giá 399.000đ',
-  'đã đặt 3 gói dùng thử với giá 399.000đ',
-  'đã đặt 1 hộp dùng thử với giá 960.000đ',
-  'đã đặt 1 hộp dùng thử với giá 960.000đ',
-  'đã đặt 10 gói dùng thử với giá 399.000đ',
-  'đã đặt 10 gói dùng thử với giá 399.000đ',
-  'đã đặt 10 gói dùng thử với giá 399.000đ',
-  'đã đặt 10 gói dùng thử với giá 399.000đ',
-  'đã đặt 10 gói dùng thử với giá 399.000đ',
-  'đã đặt 10 gói dùng thử với giá 399.000đ',
-  'đã đặt 10 gói dùng thử với giá 399.000đ',
-  'đã đặt 10 gói dùng thử với giá 399.000đ',
-  'đã đặt 10 gói dùng thử với giá 399.000đ',
-  'đã đặt 10 gói dùng thử với giá 399.000đ',
-  'đã đặt 10 gói dùng thử với giá 399.000đ',
-  'đã đặt 10 gói dùng thử với giá 399.000đ',
-  'đã đặt 10 gói dùng thử với giá 399.000đ',
-  'đã đặt 10 gói dùng thử với giá 399.000đ',
-  'đã đặt 10 gói dùng thử với giá 399.000đ',
-  'đã đặt 10 gói dùng thử với giá 399.000đ',
-  'đã đặt 10 gói dùng thử với giá 399.000đ',
-  'đã đặt 10 gói dùng thử với giá 399.000đ',
-  'đã đặt 10 gói dùng thử với giá 399.000đ',
-  'đã đặt 10 gói dùng thử với giá 399.000đ',
-  'đã đặt 10 gói dùng thử với giá 399.000đ',
-  'đã đặt 10 gói dùng thử với giá 399.000đ',
-  'đã đặt 10 gói dùng thử với giá 399.000đ'
+  'đã đặt 1 hộp dùng thử với giá 1.020.000đ',
+  'đã đặt 2 hộp dùng thử với giá 1.800.000đ',
+  'đã đặt 2 hộp dùng thử với giá 1.800.000đ',
+  'đã đặt 2 hộp dùng thử với giá 1.800.000đ',
+  'đã đặt 1 hộp dùng thử với giá 1.020.000đ',
+  'đã đặt 1 hộp dùng thử với giá 1.020.000đ',
+  'đã đặt 2 hộp dùng thử với giá 1.800.000đ',
+  'đã đặt 2 hộp dùng thử với giá 1.800.000đ',
+  'đã đặt 2 hộp dùng thử với giá 1.800.000đ',
+  'đã đặt 2 hộp dùng thử với giá 1.800.000đ',
+  'đã đặt 2 hộp dùng thử với giá 1.800.000đ',
+  'đã đặt 2 hộp dùng thử với giá 1.800.000đ',
+  'đã đặt 2 hộp dùng thử với giá 1.800.000đ',
+  'đã đặt 2 hộp dùng thử với giá 1.800.000đ',
+  'đã đặt 2 hộp dùng thử với giá 1.800.000đ',
+  'đã đặt 2 hộp dùng thử với giá 1.800.000đ',
+  'đã đặt 2 hộp dùng thử với giá 1.800.000đ',
+  'đã đặt 2 hộp dùng thử với giá 1.800.000đ',
+  'đã đặt 2 hộp dùng thử với giá 1.800.000đ',
+  'đã đặt 2 hộp dùng thử với giá 1.800.000đ',
+  'đã đặt 2 hộp dùng thử với giá 1.800.000đ',
+  'đã đặt 2 hộp dùng thử với giá 1.800.000đ',
+  'đã đặt 2 hộp dùng thử với giá 1.800.000đ',
+  'đã đặt 2 hộp dùng thử với giá 1.800.000đ',
+  'đã đặt 2 hộp dùng thử với giá 1.800.000đ',
+  'đã đặt 2 hộp dùng thử với giá 1.800.000đ',
+  'đã đặt 2 hộp dùng thử với giá 1.800.000đ',
+  'đã đặt 2 hộp dùng thử với giá 1.800.000đ',
+  'đã đặt 2 hộp dùng thử với giá 1.800.000đ'
 ];
 function Home() {
 
@@ -134,7 +134,7 @@ function Home() {
     let timerId = setTimeout(function tick() {
       openNotification();
       timerId = setTimeout(tick, getRandomInt(60000, 120000)); // (*)
-    }, 15000);
+    }, 10000);
     return () => {
       clearTimeout(timerId);
     };

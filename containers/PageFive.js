@@ -248,7 +248,7 @@ function PageFive() {
     setSubmitting(true)
     var fullname = fullNameRef.current.value
     var phone = phoneRef.current.value
-    var product = selectedValue == 0 ? "10 Gói Dùng Thử" : selectedValue == 1 ?  "1 Hộp" : "3 Hộp"
+    var product = selectedValue == 0 ? "1 Hộp" : "3 Hộp"
     sendData(fullname, phone, product)
   }
   return (
@@ -296,10 +296,8 @@ function PageFive() {
                 <input className={classes.register_input}  placeholder="Số Điện Thoại"  id="phone_number" name="phone_number" required  ref={phoneRef}/>
 								<div className={classes.register_input, classes.select } ref={selectRef}>
                   <div className={classes.selectContent} onClick={()=>setSelectVisible(!isSelectVisible)}>  
-                      <div style={{width: "90%", position:'relative'}} >{selectedValue == 0 ? <div value={10}  className={classes.selectValue, classes.selectedValue}>10 gói dùng thử:{' '}
-												<span style={{ color: 'red', fontWeight: 'bold' }}>399.000đ</span>{' '}
-												<b>(10 gói)</b></div> : selectedValue == 1 ? <div className={classes.selectValue, classes.selectedValue}>1 hộp 30 gói chỉ còn{' '}
-												<span style={{ color: 'red', fontWeight: 'bold' }}>960.000đ</span>{' '}
+                      <div style={{width: "90%", position:'relative'}} >{selectedValue == 0 ? <div className={classes.selectValue, classes.selectedValue}>1 hộp 30 gói chỉ còn{' '}
+												<span style={{ color: 'red', fontWeight: 'bold' }}>1.020.000đ</span>{' '}
 												<span className="strikethrough" style={{ fontSize: 11 }}>
 													1.200.000đ{' '}
 												</span>{' '}
@@ -315,24 +313,24 @@ function PageFive() {
                       <KeyboardArrowDownIcon className={classes.select_arrow} />
                   </div>
                   <div className={classes.dropDown} style={{display: isSelectVisible ? "" : "none"}}>
-                  <div onClick={()=>changeSelectValue(0)}>
+                  {/* <div onClick={()=>changeSelectValue(0)}>
                     
                     <div className={classes.group}>
                     Dùng Thử
                     </div>
                       <div className={`${classes.selectValue}  ${(selectedValue == 0 ? classes.active : classes.inactive)}`}>10 gói dùng thử:{' '}
 												<span style={{ color: 'red', fontWeight: 'bold' }}>399.000đ</span>{' '}
-												<b>(10 gói)</b></div></div>
+												<b>(10 gói)</b></div></div> */}
                       <div onClick={()=>changeSelectValue(1)}>
                       <div className={classes.group}>
                       1 Hộp
                     </div>
                       <div className={`${classes.selectValue}  ${(selectedValue == 1 ? classes.active : classes.inactive)}`}>1 hộp 30 gói chỉ còn{' '}
-												<span style={{ color: 'red', fontWeight: 'bold' }}>960.000đ</span>{' '}
+												<span style={{ color: 'red', fontWeight: 'bold' }}>1.020.000đ</span>{' '}
 												<span className="strikethrough" style={{ fontSize: 11 }}>
 													1.200.000đ{' '}
 												</span>{' '}
-												<span style={{ color: 'red', fontWeight: 'normal' }}>(giảm -20%)</span></div>
+												<span style={{ color: 'red', fontWeight: 'normal' }}>(giảm -15%)</span></div>
                       </div>
                       
                       <div onClick={()=>changeSelectValue(2)}>
