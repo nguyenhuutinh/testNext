@@ -34,14 +34,14 @@ function Page1(){
 		<Grid  xl={9}>
 			<br />
 			<div className={classes.intro}>
-				Chào mừng bạn đến với website chính thức của <b style={{color:'#084f1f'}}>Mì Kiều Mạch Old Henry</b> (<a style={{color:'#084f1f'}} href="https://www.mikieumach.vn">www.mikieumach.vn</a>) được được vận
+				Chào mừng bạn đến với website chính thức của <b style={{color:'#084f1f'}}>Mì Kiều Mạch Old Henry</b> (<a style={{color:'#084f1f'}} href="https://mikieumach.vn">mikieumach.vn</a>) được được vận
 				hành bởi <b>Công Ty TNHH Thousand Hands Viet Nam</b>. Chúng tôi mong bạn vui lòng dành thời gian đọc và tìm
 				hiểu những điều khoản sử dụng đối với website <b style={{color:'#084f1f'}}>Old Henry</b> một cách rõ ràng để tránh những hiểu lầm hay
 				khúc mắc không đáng có về sau. <br /><br /> <b>1. QUY ĐỊNH CHUNG</b> <br/>Sau khi truy cập vào trang Thông tin Điện tử&nbsp;
-				<a style={{color:'#084f1f'}} href="https://www.mikieumach.vn">www.mikieumach.vn</a> để tham khảo thông tin hoặc mua sắm, quý khách đã đồng ý tuân thủ và ràng buộc với những
+				<a style={{color:'#084f1f'}} href="https://mikieumach.vn">mikieumach.vn</a> để tham khảo thông tin hoặc mua sắm, quý khách đã đồng ý tuân thủ và ràng buộc với những
 				quy định của <b style={{color:'#084f1f'}}>Old Henry</b>. Quý khách vui lòng xem kỹ các quy định và hợp tác. Nếu có bất kỳ thắc mắc gì về
 				các quy định trong điều khoản sử dụng, bạn có thể liên hệ trực tiếp qua hotline hoặc fanpage để được hỗ
-				trợ. <br /><br /><b>2. BẢN QUYỀN VÀ THƯƠNG HIỆU</b> <br/>Trang web <a style={{color:'#084f1f'}} href="https://www.mikieumach.vn">www.mikieumach.vn</a> và các nội dung, hình ảnh, thương hiệu,
+				trợ. <br /><br /><b>2. BẢN QUYỀN VÀ THƯƠNG HIỆU</b> <br/>Trang web <a style={{color:'#084f1f'}} href="https://mikieumach.vn">mikieumach.vn</a> và các nội dung, hình ảnh, thương hiệu,
 				logo, banner… trực thuộc trên trang web đều thuộc quyền sở hữu của thương hiệu <b style={{color:'#084f1f'}}>Mì Kiều Mạch Old Henry </b>
 				 (dưới sự quản lý của <b>Công Ty TNHH Thousand Hands Viet Nam</b>). <br/>Bất kì hành động nào như sao chép, sử dụng các nội
 				dung, hình ảnh, thương hiệu… với mục đích thương mại mà không có sự cho phép của <b style={{color:'#084f1f'}}>Old Henry</b> là xâm phạm

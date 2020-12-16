@@ -235,7 +235,7 @@ function PageFive() {
         setSubmitting(false)
       }
     }
-    xhr.open('POST', 'https://www.mikieumach.vn/blog/wp-json/contact-form-7/v1/contact-forms/2057/feedback', true)
+    xhr.open('POST', 'https://mikieumach.vn/blog/wp-json/contact-form-7/v1/contact-forms/2057/feedback', true)
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
     // open the request with the verb and the url

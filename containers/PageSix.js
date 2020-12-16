@@ -166,7 +166,7 @@ function PageSix() {
             <div className={classes.p1} style={{marginTop: 20}}>
             Khách hàng có thể đặt mì trực tiếp qua:<br/>
             <p>1, Website:  {' '}
-            <a href="https://www.mikieumach.vn">www.mikieumach.vn</a>
+            <a href="https://mikieumach.vn">mikieumach.vn</a>
             </p>
             
             <p>2, Facebook Fanpage: {' '}
