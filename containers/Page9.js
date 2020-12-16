@@ -74,7 +74,7 @@ function Page9() {
           <h3 className={classes.header1}>Lợi ích sức khoẻ của mì</h3>
 					<h2 className={classes.header2}>OLD HENRY - MÌ KIỀU MẠCH</h2>
 					<p className={classes.desc}>Old Henry sử dụng loại lúa mạch kiều mạch cao cấp - tốt nhất trong việc kiểm soát bệnh tiểu đường. Các thí nghiệm dược lý và lâm sàng hiện đại cho thấy các chất flavonoid trong kiều mạch có chức năng giúp hạ đường huyết, hạ lipid máu, ức chế kết tập tiểu cầu, làm sạch các gốc tự do và tăng cường khả năng miễn dịch của cơ thể. Người Nhật gọi kiều mạch là siêu thực phẩm cho sức khỏe, người Hàn Quốc gọi nó là thực phẩm bất tử, và người Đức gọi kiều mạch là thần dược phương Đông. Vì vậy, đối với bệnh nhân tiểu đường, sử dụng mì Old Henry có thể giúp kiểm soát lượng đường trong máu một cách tự nhiên, an toàn và hiệu quả.</p>
-					<Button
+					{/* <Button
 						className={classes.morebutton}
 						size="large"
 						type="default"
@@ -83,7 +83,7 @@ function Page9() {
 						}}
 					>
 					Tìm Hiểu Thêm
-					</Button>
+					</Button> */}
         </Grid>
         <Grid item xs={12}>
         

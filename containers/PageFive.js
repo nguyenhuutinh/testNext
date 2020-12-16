@@ -221,7 +221,7 @@ function PageFive() {
   }
   const sendData = (name, phone, product) =>{
     var xhr = new XMLHttpRequest()
-    var params = `your-name=${name}&tel-70=${phone}&text-815=${product}`;
+    var params = `your-name=${name}&tel-70=${phone}&text-815=${product} - mobile`;
 
     // get a callback when the server responds
     xhr.onreadystatechange = function() {//Call a function when the state changes.
