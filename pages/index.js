@@ -18,6 +18,7 @@ import { SnackbarProvider, useSnackbar } from 'notistack';
 import { Button } from "@material-ui/core";
 import React ,{useEffect, useState} from 'react';
 import { Waypoint } from "react-waypoint";
+import jsCookie from 'js-cookie';
 
 const timeData = [
   '1 phút',
@@ -128,7 +129,27 @@ const productData = [
   'đã đặt 2 hộp dùng thử với giá 1.800.000đ'
 ];
 function Home() {
-
+  function getQueryVariable(variable) {
+    if(typeof window !== "undefined"){
+      var query = window.location.search.substring(1);
+      var vars = query.split('&');
+      for (var i = 0; i < vars.length; i++) {
+          var pair = vars[i].split('=');
+          if (decodeURIComponent(pair[0]) == variable) {
+              return decodeURIComponent(pair[1]);
+          }
+      }
+    }
+    
+    // console.log('Query variable %s not found', variable);
+}
+  useEffect(()=>{
+    console.log(window)
+    console.log(getQueryVariable("click_id"))
+    if(window.location != undefined && location.search && getQueryVariable("click_id")){
+      jsCookie.set('click_id', getQueryVariable("click_id"))
+		}
+  },[])
   const { enqueueSnackbar } = useSnackbar();
   useEffect(() => {
     let timerId = setTimeout(function tick() {
@@ -167,7 +188,7 @@ function Home() {
       
       <PageThree />
       <Waypoint onEnter={handleData}></Waypoint>
-      <PageFive />
+      <PageFive accessTrade={getQueryVariable("click_id")}/>
       
 {show && <div>
       {/* <PageFour /> */}
