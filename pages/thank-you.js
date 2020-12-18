@@ -96,7 +96,7 @@ export default function Home() {
 
         var data = {
           "click_id": jsCookie.get('click_id'),
-          "campaign_id": "282",
+          "campaign_id": "228",
           "order_id": `No.${Date.now()}`,
           "action": "buy",
           "action_time": Date.now(),
@@ -113,7 +113,7 @@ export default function Home() {
               "currency": "VND"
           },
           "client_ip": jsCookie.get("my_ip"),
-          "user_agent": "UA123567",
+          "user_agent": "adv_thousandhand",
           "conversion_parts": [
               {
                   "id": "1",

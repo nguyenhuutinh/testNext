@@ -40,7 +40,7 @@ export default class MyDocument extends Document {
     dangerouslySetInnerHTML={{
       __html: `
       document.addEventListener('DOMContentLoaded', function() {
-        SF.init({"campaign_id":"282","is_reoccur":1,"is_lastclick": 1} );
+        SF.init({"campaign_id":"228","is_reoccur":1,"is_lastclick": 1} );
         SF.track();
       });
         `,
