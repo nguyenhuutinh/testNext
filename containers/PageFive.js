@@ -181,7 +181,7 @@ const useStyles = makeStyles((theme) => ({
  
 }));
 
-function PageFive(accessTrade) {
+function PageFive({accessTrade}) {
   const classes = useStyles();
   const { height } = useWindowDimensions();
   const halfHeight = height / 6;
@@ -221,9 +221,10 @@ function PageFive(accessTrade) {
   }
   const sendData = (name, phone, product, product_id) =>{
     var xhr = new XMLHttpRequest()
-    var accessTrade = accessTrade ? "- accessTrade - with clickId=" + accessTrade : ""
-    var params = `your-name=${name}&tel-70=${phone}&text-815=${product} - mobile ${accessTrade}`;
-
+    var access = accessTrade ? "- accessTrade - with clickId=" + accessTrade : ""
+    console.log("accessTrade", access)
+    var params = `your-name=${name}&tel-70=${phone}&text-815=${product} - mobile ${access}`;
+    
     // get a callback when the server responds
     xhr.onreadystatechange = function() {//Call a function when the state changes.
       if(xhr.readyState == 4 && xhr.status == 200) {

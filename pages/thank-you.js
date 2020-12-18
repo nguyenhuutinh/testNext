@@ -44,7 +44,7 @@ export default function Home() {
   useEffect(() => {
     getClientIp()
     setTimeout(() => {
-      window.location.href =  "https://www.facebook.com/groups/824706818334459"
+      // window.location.href =  "https://www.facebook.com/groups/824706818334459"
     }, 15000);
     
     return () => {
