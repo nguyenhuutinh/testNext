@@ -181,7 +181,7 @@ const useStyles = makeStyles((theme) => ({
  
 }));
 
-function PageFive() {
+function PageFive(accessTrade) {
   const classes = useStyles();
   const { height } = useWindowDimensions();
   const halfHeight = height / 6;
@@ -219,15 +219,16 @@ function PageFive() {
     setSelectiveValue(value)
     setSelectVisible(false)
   }
-  const sendData = (name, phone, product) =>{
+  const sendData = (name, phone, product, product_id) =>{
     var xhr = new XMLHttpRequest()
-    var params = `your-name=${name}&tel-70=${phone}&text-815=${product} - mobile`;
+    var accessTrade = accessTrade ? "- accessTrade - with clickId=" + accessTrade : ""
+    var params = `your-name=${name}&tel-70=${phone}&text-815=${product} - mobile ${accessTrade}`;
 
     // get a callback when the server responds
     xhr.onreadystatechange = function() {//Call a function when the state changes.
       if(xhr.readyState == 4 && xhr.status == 200) {
         router.push(
-          `/thank-you?phone=${phone}&name=${name}&goi=${product}`
+          `/thank-you?phone=${phone}&name=${name}&goi=${product_id}`
         );
       }
       console.log(xhr.readyState, xhr.status)
@@ -249,7 +250,8 @@ function PageFive() {
     var fullname = fullNameRef.current.value
     var phone = phoneRef.current.value
     var product = selectedValue == 0 ? "1 Hộp" : "2 Hộp"
-    sendData(fullname, phone, product)
+    var product_id = selectedValue == 0 ? "1hop" : "2hop"
+    sendData(fullname, phone, product, product_id)
   }
   return (
     <>

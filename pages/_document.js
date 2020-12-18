@@ -36,6 +36,16 @@ export default class MyDocument extends Document {
         `,
     }}
   /> */}
+   <script
+    dangerouslySetInnerHTML={{
+      __html: `
+      document.addEventListener('DOMContentLoaded', function() {
+        SF.init({"campaign_id":"282","is_reoccur":1,"is_lastclick": 1} );
+        SF.track();
+      });
+        `,
+    }}
+  />
           {/* <link async href="/fonts/style.css" rel="stylesheet"/> */}
           <link rel="dns-prefetch" href="//www.googletagmanager.com"></link>
           <script
@@ -61,6 +71,8 @@ export default class MyDocument extends Document {
         <body>
         {/* <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXX"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> */}
+<script src="https://service-api.accesstrade.vn/js/SFtracking.js"></script>
+  
           <Main />
           <NextScript />
         </body>
