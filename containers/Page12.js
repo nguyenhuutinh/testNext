@@ -12,18 +12,18 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const testimo = [
 	{
-		content: 'Cô đã giảm đường huyết từ 184 mol xuống còn 140 mol sau 2 tuần dùng mì đó con',
+		content: 'Cô ăn mì mỗi buổi sáng 1 thời gian thấy đường huyết giảm tốt lắm.',
 		name: 'Cô Hiền (68 tuổi – TPHCM)',
 		image: "../khach1.jpg"
 	},
 	{
-		content: 'Cô dùng sau 2 tuần, đường huyết giảm từ 322 mol xuống còn 170 mol',
+		content: 'Cô mới dùng thử vài ngày thôi, nhưng thấy mì ngon và đường cũng không tăng lên nữa.',
 		name: 'Cô Hương Thủy ( 67 tuổi - Thủ Đức)',
 		image: "../khach2.jpg"
 	},
 	{
 		content:
-			'Cô đã cắt giảm khá nhiều thuốc sau thời gian sử dụng mì Old Henry. Việc cắt giảm thuốc giúp giảm các tác dụng phụ không mong muốn đến sức khỏe',
+			'Đường huyết của mẹ ổn định lại nhiều, thấy người khỏe hẳn ra. ',
 		name: 'Cô Mai (68 tuổi - Quận 10)',
 		image: "../khach3.jpg"
 	},
