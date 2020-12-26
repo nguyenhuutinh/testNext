@@ -211,7 +211,7 @@ function Page12() {
 		
           </Grid> 
           </div>
-		  <p style={{fontSize: 9, textAlign: "right", margin: 10}}>Lưu ý: Kết quả có thể đa dạng tùy theo thể trạng và cơ chế tập luyện của mỗi người.</p>
+		  <p style={{fontSize: 9, textAlign: "right", marginRight: '10px', marginBottom: '10px', fontFamily:'Oswald'}}>Lưu ý: Kết quả có thể đa dạng tùy theo thể trạng và cơ chế tập luyện của mỗi người.</p>
           <div style={{height: 1, background:'#084f1f'}}></div>
         </Container> 
 }
