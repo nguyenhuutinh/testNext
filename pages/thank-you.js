@@ -205,6 +205,7 @@ export default function Home() {
     temp.push("price", price)
     temp.push("phone", getQueryVariable("phone"))
     temp.push("name", getQueryVariable("name"))
+    temp.push("date", new Date())
     let req = {data: [[ temp] ]};
     // get a callback when the server responds
     xhr.onreadystatechange = function() {//Call a function when the state changes.
