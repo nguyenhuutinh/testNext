@@ -54,7 +54,7 @@ export default function Home() {
   }, [])
   useEffect(()=>{
     setTimeout(() => {
-      
+      postInfoToDoc()
       if(jsCookie.get('click_id') && jsCookie.get('click_id') != ""){
         onFinish()
       }
@@ -194,6 +194,31 @@ export default function Home() {
     // send the request
     xhr.send(JSON.stringify(req))
   }
+
+  const postInfoToDoc = (response) =>{
+    // if(response.body.status != 'success'){
+    //     return
+    // }
+    var xhr = new XMLHttpRequest()
+    var temp = []
+    var price = getQueryVariable("goi") || "1hop"
+    temp.push("price", price)
+    temp.push("phone", getQueryVariable("phone"))
+    temp.push("name", getQueryVariable("name"))
+    let req = {data: [[ temp] ]};
+    // get a callback when the server responds
+    xhr.onreadystatechange = function() {//Call a function when the state changes.
+      
+    }
+    xhr.open('POST', 'https://api.thousandhands.com/api/v1/google_api/spreadsheets/1afkKOpr55szu55jI-PafQgh84-v3WeSMNX3-7Sg6JFA', true)
+    xhr.setRequestHeader('Content-type', 'application/json');
+
+    // open the request with the verb and the url
+    
+    // send the request
+    xhr.send(JSON.stringify(req))
+  }
+
   const getClientIp =() => {
     fetch('https://api.ipify.org?format=json').then(response => {
       return response.json();
