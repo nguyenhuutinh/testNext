@@ -279,7 +279,7 @@ function PageFive({accessTrade}) {
 								Đăng ký ngay hôm nay để nhận ưu đãi:<br />
 								<ul className={classes.itemUl}>
 									<li className={classes.itemLi}>
-										<span style={{ color: 'red', fontWeight: 600 }}>Giảm đến 25%</span> khi đặt hàng
+										<span style={{ color: 'red', fontWeight: 600 }}>Giảm đến 35%</span> khi đặt hàng
 										tại website (số lượng có hạn){' '}
 									</li>
 									<li className={classes.itemLi}>
