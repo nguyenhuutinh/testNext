@@ -116,6 +116,13 @@ function PageEight() {
 											</span>{' '}
 											<span className={classes.discount}>(giảm 25%)</span>
 										</li>
+                    <li className={classes.productItem}>
+											1 Thùng 4 Hộp chỉ còn: <b>3.120.000đ</b>{' '}
+											<span className="strikethrough" style={{ fontSize: 12 }}>
+												4.800.000đ
+											</span>{' '}
+											<span className={classes.discount}>(giảm 35%)</span>
+										</li>
 									</ul>
 								</div>
 							</div>

@@ -93,6 +93,10 @@ export default function Home() {
       total_sale_amount = 1800000
       total_base_amount = 2400000
     }
+    else if(price == "1thung"){
+      total_sale_amount = 3120000
+      total_base_amount = 4800000
+    }
 		
 
         var data = {
@@ -110,7 +114,7 @@ export default function Home() {
               "currency": "VND"
           },
           "total_commission": {
-              "amount": (total_sale_amount / 100 * 35),
+              "amount": (total_sale_amount / 100 * 30),
               "currency": "VND"
           },
           "client_ip": jsCookie.get("my_ip"),
@@ -124,7 +128,7 @@ export default function Home() {
                   "discount": (total_base_amount - total_sale_amount),
                   "sale_amount": total_sale_amount,
                   "currency": "VND",
-                  "name": `${price == "1hop" ? "1 HỘP" : price == "2hop" ? "2 HỘP": "1 HỘP"} MÌ KIỀU MẠCH OLDHENRY`,
+                  "name": `${price == "1hop" ? "1 HỘP" : price == "2hop" ? "2 HỘP": "1 THÙNG"} MÌ KIỀU MẠCH OLDHENRY`,
                   "category_name": "MÌ KIỀU MẠCH",
                   "category_id": "MIKIEUMACH",
                   "quantity": 1,
