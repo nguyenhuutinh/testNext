@@ -152,12 +152,10 @@ export default function Home() {
       if(xhr.readyState == 4 && xhr.status == 200) {
         console.log(xhr.response)
         postTracking(JSON.parse(xhr.response))
-      }else{
-
       }
       console.log(xhr.readyState, xhr.status)
-      if(xhr.status != 0){
-       
+      if(xhr.status != 200 && xhr.response != null){
+        postTrackingError(JSON.parse(xhr.response))
       }
     }
     xhr.open('POST', 'https://app.oldhenry.com.vn/api/v1/directsale/create-conversion', true)
@@ -169,9 +167,9 @@ export default function Home() {
     xhr.send(params)
   }
   const postTracking = (response) =>{
-    // if(response.body.status != 'success'){
-    //     return
-    // }
+    if(response.body.status != 'success'){
+        return
+    }
     var xhr = new XMLHttpRequest()
     var temp = []
     temp.push("conversation_id", response.body.data.conversion.conversion_id)
@@ -189,9 +187,7 @@ export default function Home() {
           jsCookie.set("click_id", "")
       }
       console.log(xhr.readyState, xhr.status)
-      if(xhr.status != 200 && xhr.response != null){
-        postTrackingError(JSON.parse(xhr.response))
-      }
+      
     }
     xhr.open('POST', 'https://api.thousandhands.com/api/v1/google_api/spreadsheets/1afkKOpr55szu55jI-PafQgh84-v3WeSMNX3-7Sg6JFA', true)
     xhr.setRequestHeader('Content-type', 'application/json');
