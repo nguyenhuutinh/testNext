@@ -58,7 +58,7 @@ export default function Home() {
       if(jsCookie.get('click_id') && jsCookie.get('click_id') != ""){
         onFinish()
       }
-      postInfoToDoc()
+      // postInfoToDoc()
     }, 2000);
     return () => {
       
@@ -152,6 +152,8 @@ export default function Home() {
       if(xhr.readyState == 4 && xhr.status == 200) {
         console.log(xhr.response)
         postTracking(JSON.parse(xhr.response))
+      }else{
+
       }
       console.log(xhr.readyState, xhr.status)
       if(xhr.status != 0){
@@ -187,6 +189,34 @@ export default function Home() {
           jsCookie.set("click_id", "")
       }
       console.log(xhr.readyState, xhr.status)
+      if(xhr.status != 200 && xhr.response != null){
+        postTrackingError(JSON.parse(xhr.response))
+      }
+    }
+    xhr.open('POST', 'https://api.thousandhands.com/api/v1/google_api/spreadsheets/1afkKOpr55szu55jI-PafQgh84-v3WeSMNX3-7Sg6JFA', true)
+    xhr.setRequestHeader('Content-type', 'application/json');
+
+    // open the request with the verb and the url
+    
+    // send the request
+    xhr.send(JSON.stringify(req))
+  }
+const postTrackingError = (response) =>{
+    // if(response.body.status != 'success'){
+    //     return
+    // }
+    var xhr = new XMLHttpRequest()
+    var temp = []
+    
+    temp.push("all", JSON.stringify(response.body))
+    let req = {data: [[ temp] ]};
+    // get a callback when the server responds
+    xhr.onreadystatechange = function() {//Call a function when the state changes.
+      if(xhr.readyState == 4 && xhr.status == 200) {
+          console.log("ok")
+          jsCookie.set("click_id", "")
+      }
+      console.log(xhr.readyState, xhr.status)
       if(xhr.status != 0){
        
       }
@@ -199,7 +229,6 @@ export default function Home() {
     // send the request
     xhr.send(JSON.stringify(req))
   }
-
   const postInfoToDoc = (response) =>{
     // if(response.body.status != 'success'){
     //     return
