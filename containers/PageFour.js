@@ -109,7 +109,7 @@ function PageFour({ data }) {
                 <LazyLoadImage effect="blur" className={classes.text1} src={"../mbtext1.png"} />
                 <LazyLoadImage effect="blur" className={classes.text2} src={"../mbtext2.png"} />
               </div> */}
-              <iframe  src={`https://www.youtube.com/embed/${videoId ?? "z9qukTOx7mI"}`} sandbox="allow-forms allow-scripts allow-pointer-lock allow-same-origin allow-top-navigation" frameborder="0" allow="accelerometer; autoplay;" allowfullscreen></iframe>
+              <iframe height="200" src={`https://www.youtube.com/embed/${videoId ?? "z9qukTOx7mI"}`} sandbox="allow-forms allow-scripts allow-pointer-lock allow-same-origin allow-top-navigation" frameborder="0" allow="accelerometer; autoplay;" allowfullscreen></iframe>
               <div>
               {data.items.slice(0,3).map(({ id, snippet = {}, entry }, index) => {
                   
