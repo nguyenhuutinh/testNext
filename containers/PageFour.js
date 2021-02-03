@@ -21,7 +21,8 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "5px",
     display: "flex",
     flexDirection: "column",
-    overflow:'hidden'
+    overflow:'hidden',
+    position:"relative"
 
   },
   videotitle: {
