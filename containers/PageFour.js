@@ -2,10 +2,12 @@ import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 import useWindowDimensions from "../hooks/windowsize";
+import Button from '@material-ui/core/Button';
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Container, Grid } from "@material-ui/core";
+
 const useStyles = makeStyles((theme) => ({
   root:{
     backgroundColor: "#ecf6e8",
@@ -16,10 +18,10 @@ const useStyles = makeStyles((theme) => ({
     borderTopRightRadius: "10px",
     border: "1px solid #084f1f",
     backgroundSize: "cover",
-    marginBottom: "70px",
+    marginBottom: "5px",
     display: "flex",
     flexDirection: "column",
-
+    overflow:'hidden'
 
   },
   videotitle: {
@@ -40,17 +42,53 @@ const useStyles = makeStyles((theme) => ({
     // margin-right: 2px;
     marginBottom: "0px",
     width: "calc(100% - 0.5px)"
+  },
+  card:{
+    display: "flex",
+    padding:"10px",
+    alignItems:'center',
+    borderBottom: "1px dotted black"
+
+  },
+  active:{
+    backgroundColor:'#26C281'
+  },
+  image:{
+    width: "100px",
+    height:"70px",
+    display:'table',
+    backgroundSize:"cover",
+    borderRadius: "10px",
+    marginRight: "10px"
+    
+  },
+  title:{
+    fontSize: 16,
+    padding: 10
+
+  },
+  button:{
+    color: "white",
+    background:'red',
+    marginBottom:'60px'
   }
 }));
 
-function PageFour() {
+function PageFour({ data }) {
   const classes = useStyles();
   const { height } = useWindowDimensions();
   const halfHeight = height / 3;
+  const [isSelected, setIsSelected] = useState(false);
   const [touchDevice, setTouchDevice] = useState(false);
+  const [videoId, setVideoId] = useState();
   useEffect(() => {
     setTouchDevice("ontouchstart" in document.documentElement);
   }, []);
+
+  const playItem = (id, pos) =>{
+    setIsSelected(pos)
+    setVideoId(id)
+  }
   return (
     <>{touchDevice && <div className={classes.root}>
       <Container>
@@ -61,27 +99,29 @@ function PageFour() {
         >
           
             <div className={classes.promovideo}>
-              <div className={classes.videotitle}>
+              {/* <div className={classes.videotitle}>
                 <LazyLoadImage effect="blur" className={classes.text1} src={"../mbtext1.png"} />
                 <LazyLoadImage effect="blur" className={classes.text2} src={"../mbtext2.png"} />
+              </div> */}
+              <iframe  src={`https://www.youtube.com/embed/${videoId ?? "z9qukTOx7mI"}`} sandbox="allow-forms allow-scripts allow-pointer-lock allow-same-origin allow-top-navigation" frameborder="0" allow="accelerometer; autoplay;" allowfullscreen></iframe>
+              <div>
+              {data.items.slice(0,3).map(({ id, snippet = {}, entry }, index) => {
+                  
+                    const { title, thumbnails = {}, resourceId = {} } = snippet;
+                    const { medium } = thumbnails;
+                    return (
+                      <div key={id} className={isSelected == index ? `${classes.card} ${classes.active}` : `${classes.card}`} onClick={()=>{playItem(resourceId.videoId, index)}}>
+                          <div className={classes.image} style={{backgroundImage: `url(${medium.url})`}} alt="" />
+                          <h5 className={classes.title} >{ title }</h5>
+                      </div>
+                    )
+                  })}
               </div>
-              <video
-                className={classes.videoitem}
-                controls
-                data-automation="MIKIEUMACH_OLDHENRY_heroVideo_video"
-                autoplay="false"
-                preload="auto"
-                loop="loop"
-                muted="muted"
-                webkit-playsinline="true"
-                playsinline="true"
-                poster=""
-              >
-
-                <source src={"https://oldhenryvn.s3-ap-southeast-1.amazonaws.com/assets/chi-tai-preview.mp4"} type="video/mp4" />
-              </video>
+              
 
             </div> 
+            <Button className={classes.button} variant="contained" color="primary" href="https://www.youtube.com/playlist?list=PLYtQnSZdvHMigAe_ip_fWNHQrwtEBzT3j">XEM THÊM TRÊN YOUTUBE</Button>      
+            
         </Grid>
         </Container> 
   </div> }

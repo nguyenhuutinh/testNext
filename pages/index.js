@@ -128,7 +128,8 @@ const productData = [
   'đã đặt 1 thùng với giá 3.120.000đ',
   'đã đặt 2 hộp với giá 1.800.000đ'
 ];
-function Home() {
+function Home({data}) {
+  // console.log("data", data)
   function getQueryVariable(variable) {
     if(typeof window !== "undefined"){
       var query = window.location.search.substring(1);
@@ -191,7 +192,7 @@ function Home() {
       <PageFive accessTrade={getQueryVariable("click_id")}/>
       
 {show && <div>
-      {/* <PageFour /> */}
+      <PageFour data={data}/>
      
      <PageSix />
       <PageSeven />
@@ -207,10 +208,23 @@ function Home() {
   );
 }
 
-export default function IntegrationNotistack() {
+const YOUTUBE_PLAYLIST_ITEMS_API = 'https://www.googleapis.com/youtube/v3/playlistItems';
+
+export async function getServerSideProps() {
+  const res = await fetch(`${YOUTUBE_PLAYLIST_ITEMS_API}?part=snippet&maxResults=50&playlistId=PLYtQnSZdvHMigAe_ip_fWNHQrwtEBzT3j&key=AIzaSyCEUo1dKMxygN_Kw1FLZkJ3yfiG61fUbWI`)
+  const data = await res.json();
+
+  return {
+    props: {
+      data
+    }
+  }
+}
+export default function IntegrationNotistack({data}) {
+  // console.log(data)
   return (
     <SnackbarProvider maxSnack={3}>
-      <Home />
+      <Home data={data}/>
     </SnackbarProvider>
   );
 }
