@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles , createMuiTheme, MuiThemeProvider} from "@material-ui/core/styles";
 
 import useWindowDimensions from "../hooks/windowsize";
 import Button from '@material-ui/core/Button';
@@ -7,6 +7,12 @@ import Button from '@material-ui/core/Button';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Container, Grid } from "@material-ui/core";
+
+
+const redTheme = createMuiTheme({ palette: { primary: {light: '#f6685e',
+main: '#f44336',
+dark: '#aa2e25',
+contrastText: '#fff',} } })
 
 const useStyles = makeStyles((theme) => ({
   root:{
@@ -73,12 +79,9 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     background:'red',
     marginBottom:'60px',
-    "& :hover, & :active, & :focus":{
-      border: "1px solid red",
-      outlineColor : "red",
-      background:'red',
-    }
-  }
+    
+  },
+  
 }));
 
 function PageFour({ data }) {
@@ -127,7 +130,9 @@ function PageFour({ data }) {
               
 
             </div> 
-            <Button className={classes.button} variant="contained" color="primary" href="https://www.youtube.com/playlist?list=PLYtQnSZdvHMigAe_ip_fWNHQrwtEBzT3j">XEM THÊM TRÊN YOUTUBE</Button>      
+            <MuiThemeProvider theme={redTheme}>
+              <Button className={classes.button} variant="contained" href="https://www.youtube.com/playlist?list=PLYtQnSZdvHMigAe_ip_fWNHQrwtEBzT3j">XEM THÊM TRÊN YOUTUBE</Button>      
+            </MuiThemeProvider>
             
         </Grid>
         </Container> 
