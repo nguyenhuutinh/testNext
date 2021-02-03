@@ -70,7 +70,12 @@ const useStyles = makeStyles((theme) => ({
   button:{
     color: "white",
     background:'red',
-    marginBottom:'60px'
+    marginBottom:'60px',
+    "& :hover, & :active, & :focus":{
+      border: "1px solid red",
+      outlineColor : "red",
+      background:'red',
+    }
   }
 }));
 
