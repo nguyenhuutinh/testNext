@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     padding:"10px",
     alignItems:'center',
-    borderBottom: "1px dotted black"
+    // borderBottom: "1px dotted black"
 
   },
   active:{
