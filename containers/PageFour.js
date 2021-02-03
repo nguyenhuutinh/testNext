@@ -65,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title:{
     fontSize: 16,
-    padding: 10
+    // padding: 10
 
   },
   button:{
