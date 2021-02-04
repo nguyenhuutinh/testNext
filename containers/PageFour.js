@@ -72,7 +72,8 @@ const useStyles = makeStyles((theme) => ({
   },
   title:{
     fontSize: 16,
-    paddingRight: 10
+    paddingRight: 10,
+    width: "70%",
 
   },
   button:{
