@@ -66,10 +66,10 @@ function Footer() {
 										{(
 											<h3 style={{ fontSize: 14 }}>
 												{/* Nhập khẩu và phân phối độc quyền tại Việt Nam bởi: <br /> */}
-												Công Ty TNHH Thousand Hands Viet Nam<br />
+												Công Ty TNHH Old Henry Viet Nam<br />
 												416A1 Hai Bà Trưng, Phường Tân Định, Quận 1, TP. HCM<br/>
 												Hotline: 1900 633084<br/>
-												Mã số thuế: 0310752786<br/>
+												Mã số thuế: 0316339430<br/>
 												
 											</h3>
 										)}

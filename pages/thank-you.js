@@ -133,7 +133,7 @@ export default function Home() {
                   "category_id": "MIKIEUMACH",
                   "quantity": 1,
                   "commission": {
-                      "amount": (total_sale_amount / 100 * 35),
+                      "amount": (total_sale_amount / 100 * 30),
                       "currency": "VND"
                   },
                   "calculate_by" : "FIXED"
