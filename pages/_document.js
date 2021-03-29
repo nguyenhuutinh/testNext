@@ -10,7 +10,7 @@ export default class MyDocument extends Document {
         <Head>
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
-background-image          <link rel="preload"
+         <link rel="preload"
       as="style"
       href="$CSS&display=swap" />
 <link rel="preload"
