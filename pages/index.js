@@ -188,10 +188,10 @@ function Home({data}) {
       <PageTwo />
       
       <PageThree />
-      <Waypoint onEnter={handleData}></Waypoint>
+     
       <PageFive accessTrade={getQueryVariable("click_id")}/>
       
-{show && <div>
+
       <PageFour data={data}/>
      
      <PageSix />
@@ -203,7 +203,7 @@ function Home({data}) {
       <Page12 />
       {/* <Page13 /> */}
       <PageFive />
-      <Footer /> </div>}
+      <Footer /> 
     </>
   );
 }

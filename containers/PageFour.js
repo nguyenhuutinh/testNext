@@ -101,7 +101,7 @@ function PageFour({ data }) {
     setVideoId(id)
   }
   return (
-    <>{touchDevice && <div className={classes.root}>
+    <>{true && <div className={classes.root}>
       <Container>
         <Grid
           container
