@@ -183,7 +183,15 @@ function Home({data}) {
   }
   return (
     <>
-      
+      <Head>
+        <meta charset="utf-8"/>
+        <meta name="google" content="notranslate" />	
+        <title>Mì Kiều Mạch Old Henry | mikieumach.vn</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta property="og:title" content="Mì Kiều Mạch Old Henry | mikieumach.vn" key="title" />
+        <meta property="og:description" content="Thực phẩm hỗ trợ ổn đình đường huyết, huyết áp cao, mì kiều mạch old henry có thể sử dụng làm món chính trong các bữa ăn hàng ngày. Mì kiều mạch sử dụng tốt nhất dành cho người bị tiểu đường." key="description" />
+        <meta name="description" content="Thực phẩm hỗ trợ ổn đình đường huyết, huyết áp cao, mì kiều mạch old henry có thể sử dụng làm món chính trong các bữa ăn hàng ngày. Mì kiều mạch sử dụng tốt nhất dành cho người bị tiểu đường." key="description" />
+      </Head>
       {/* <PageOne /> */}
       <PageTwo />
       
