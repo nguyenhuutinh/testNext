@@ -19,6 +19,7 @@ import { Button } from "@material-ui/core";
 import React ,{useEffect, useState} from 'react';
 import { Waypoint } from "react-waypoint";
 import jsCookie from 'js-cookie';
+import Head from 'next/head'
 
 const timeData = [
   '1 phút',
