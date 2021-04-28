@@ -11,6 +11,8 @@ import useWindowDimensions from "../hooks/windowsize";
 import { CircularProgress, NativeSelect, Select, TextField } from "@material-ui/core";
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import { useRouter } from 'next/router'
+import parsePhoneNumber from 'libphonenumber-js'
+import { isPossiblePhoneNumber, isValidPhoneNumber } from 'libphonenumber-js'
 
 import { Element, Link, scroller } from 'react-scroll';
 const useStyles = makeStyles((theme) => ({
@@ -247,16 +249,22 @@ function PageFive({accessTrade}) {
   }
   const submitData = (e, e1) =>{
     e.preventDefault();
-    setSubmitting(true)
+    var phone = "+84"+ phoneRef.current.value
+    var data = isValidPhoneNumber(phone,'VI')
+    if(data == false){
+        alert("Số Điện Thoại Không Đúng. Vui Lòng Kiểm tra lại")
+        return
+    }
+    // setSubmitting(true)
     var fullname = fullNameRef.current.value
-    var phone = phoneRef.current.value
+    
     var product = selectedValue == 0 ? "10 Gói Dùng Thử" : selectedValue == 1 ? "1 Hộp" : selectedValue == 2 ?  "2 Hộp" : "1 Thùng"
     var product_id = selectedValue == 0 ? "10goi" :  selectedValue == 1 ?  "1hop" :  selectedValue == 2 ?  "2hop" :'1thung' 
     sendData(fullname, phone, product, product_id)
   }
   return (
     <>
-      {touchDevice ? (
+      {true ? (
        <div style={{position:'relative'}}>
           <Container disableGutters> 
             <Grid

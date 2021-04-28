@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "clean":"rm -rf node_modules/",
+    "clean": "rm -rf node_modules/",
     "dev": "next dev",
     "build": "next build",
     "start": "NODE_ENV=production node server.js"
@@ -13,6 +13,7 @@
     "@material-ui/icons": "^4.9.1",
     "js-cookie": "^2.2.1",
     "less": "^3.12.2",
+    "libphonenumber-js": "^1.9.16",
     "next": "10.0.2",
     "normalize.css": "^8.0.1",
     "notistack": "^1.0.1",
