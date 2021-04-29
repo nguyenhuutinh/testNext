@@ -99,9 +99,9 @@ function PageEight() {
 								<br />
 								<div className={classes.productprice}>
 									<ul className={classes.productItems}>
-										<li className={classes.productItem}>
+										{/* <li className={classes.productItem}>
 											10 gói Mì Kiều Mạch dùng thử: <b>399.000đ</b> (10 gói)<br />
-										</li>
+										</li> */}
 										<li className={classes.productItem}>
 											1 hộp 30 gói chỉ còn: <b>1.020.000đ</b>{' '}
 											<span className="strikethrough" style={{ fontSize: 12 }}>
@@ -116,13 +116,13 @@ function PageEight() {
 											</span>{' '}
 											<span className={classes.discount}>(giảm 25%)</span>
 										</li>
-                    <li className={classes.productItem}>
+                    {/* <li className={classes.productItem}>
 											1 Thùng 4 Hộp chỉ còn: <b>3.120.000đ</b>{' '}
 											<span className="strikethrough" style={{ fontSize: 12 }}>
 												4.800.000đ
 											</span>{' '}
 											<span className={classes.discount}>(giảm 35%)</span>
-										</li>
+										</li> */}
 									</ul>
 								</div>
 							</div>

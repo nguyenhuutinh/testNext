@@ -258,8 +258,10 @@ function PageFive({accessTrade}) {
     // setSubmitting(true)
     var fullname = fullNameRef.current.value
     
-    var product = selectedValue == 0 ? "10 Gói Dùng Thử" : selectedValue == 1 ? "1 Hộp" : selectedValue == 2 ?  "2 Hộp" : "1 Thùng"
-    var product_id = selectedValue == 0 ? "10goi" :  selectedValue == 1 ?  "1hop" :  selectedValue == 2 ?  "2hop" :'1thung' 
+    // var product = selectedValue == 0 ? "10 Gói Dùng Thử" : selectedValue == 1 ? "1 Hộp" : selectedValue == 2 ?  "2 Hộp" : "1 Thùng"
+    // var product_id = selectedValue == 0 ? "10goi" :  selectedValue == 1 ?  "1hop" :  selectedValue == 2 ?  "2hop" :'1thung' 
+    var product = selectedValue == 0 ? "1 Hộp" :  "2 Hộp" 
+    var product_id = selectedValue == 0 ? "1hop" :   "2hop" 
     sendData(fullname, phone, product, product_id)
   }
   return (
@@ -307,19 +309,20 @@ function PageFive({accessTrade}) {
                 <input className={classes.register_input}  placeholder="Số Điện Thoại"  id="phone_number" name="phone_number" required  ref={phoneRef}/>
 								<div className={classes.register_input, classes.select } ref={selectRef}>
                   <div className={classes.selectContent} onClick={()=>setSelectVisible(!isSelectVisible)}>  
-                      <div style={{width: "90%", position:'relative'}} >{
-                      selectedValue == 0 ? <div value={10}  className={classes.selectValue, classes.selectedValue}>10 gói dùng thử:{' '}
-                      <span style={{ color: 'red', fontWeight: 'bold' }}>399.000đ</span>{' '}
-                      <b>(10 gói)</b></div>
-                    :
-                    selectedValue == 1 ? <div className={classes.selectValue, classes.selectedValue}>1 hộp 30 gói chỉ còn{' '}
+                      <div style={{width: "90%", position:'relative'}} >
+                    {
+                    //   selectedValue == 0 ? <div value={10}  className={classes.selectValue, classes.selectedValue}>10 gói dùng thử:{' '}
+                    //   <span style={{ color: 'red', fontWeight: 'bold' }}>399.000đ</span>{' '}
+                    //   <b>(10 gói)</b></div>
+                    // :
+                    selectedValue == 0 ? <div className={classes.selectValue, classes.selectedValue}>1 hộp 30 gói chỉ còn{' '}
 												<span style={{ color: 'red', fontWeight: 'bold' }}>1.020.000đ</span>{' '}
 												<span className="strikethrough" style={{ fontSize: 11 }}>
 													1.200.000đ{' '}
 												</span>{' '}
 												<span style={{ color: 'red', fontWeight: 'normal' }}>(giảm -15%)</span></div>
                       :
-                      selectedValue == 2 ?
+                      
                       <div className={`${classes.selectValue}  ${classes.selectedValue}`}>2 hộp 60 gói chỉ còn{' '}
                       <span style={{ color: 'red', fontWeight: 'bold' }}>
                         1.800.000đ{' '}
@@ -328,31 +331,31 @@ function PageFive({accessTrade}) {
                         2.400.000đ
                       </span>{' '}
                       <span style={{ color: 'red', fontWeight: 'bold' }}>(giảm -25%)</span></div> 
-                      : <div className={`${classes.selectValue}  ${classes.selectedValue}`}>1 Thùng 4 Hộp chỉ còn{' '}
-                      <span style={{ color: 'red', fontWeight: 'bold' }}>
-                        3.120.000đ{' '}
-                      </span>{' '}
-                      <span className="strikethrough" style={{ fontSize: 11 }}>
-                        4.800.000đ
-                      </span>{' '}
-                      <span style={{ color: 'red', fontWeight: 'bold' }}>(giảm -35%)</span></div> 
+                      // : <div className={`${classes.selectValue}  ${classes.selectedValue}`}>1 Thùng 4 Hộp chỉ còn{' '}
+                      // <span style={{ color: 'red', fontWeight: 'bold' }}>
+                      //   3.120.000đ{' '}
+                      // </span>{' '}
+                      // <span className="strikethrough" style={{ fontSize: 11 }}>
+                      //   4.800.000đ
+                      // </span>{' '}
+                      // <span style={{ color: 'red', fontWeight: 'bold' }}>(giảm -35%)</span></div> 
                       }</div>
                       <KeyboardArrowDownIcon className={classes.select_arrow} />
                   </div>
                   <div className={classes.dropDown} style={{display: isSelectVisible ? "" : "none"}}>
-                  <div onClick={()=>changeSelectValue(0)}>
+                  {/* <div onClick={()=>changeSelectValue(0)}> */}
                     
-                    <div className={classes.group}>
+                    {/* <div className={classes.group}>
                     Dùng Thử
                     </div>
                       <div className={`${classes.selectValue}  ${(selectedValue == 0 ? classes.active : classes.inactive)}`}>10 gói dùng thử:{' '}
 												<span style={{ color: 'red', fontWeight: 'bold' }}>399.000đ</span>{' '}
-												<b>(10 gói)</b></div></div>
-                      <div onClick={()=>changeSelectValue(1)}>
+												<b>(10 gói)</b></div></div>*/}
+                      <div onClick={()=>changeSelectValue(0)}>
                       <div className={classes.group}>
                       1 Hộp
-                    </div>
-                      <div className={`${classes.selectValue}  ${(selectedValue == 1 ? classes.active : classes.inactive)}`}>1 hộp 30 gói chỉ còn{' '}
+                    </div> 
+                      <div className={`${classes.selectValue}  ${(selectedValue == 0 ? classes.active : classes.inactive)}`}>1 hộp 30 gói chỉ còn{' '}
 												<span style={{ color: 'red', fontWeight: 'bold' }}>1.020.000đ</span>{' '}
 												<span className="strikethrough" style={{ fontSize: 11 }}>
 													1.200.000đ{' '}
@@ -360,7 +363,7 @@ function PageFive({accessTrade}) {
 												<span style={{ color: 'red', fontWeight: 'normal' }}>(giảm -15%)</span></div>
                       </div>
                       
-                      <div onClick={()=>changeSelectValue(2)}>
+                      <div onClick={()=>changeSelectValue(1)}>
                       <div className={classes.group}>
                       2 Hộp
                     </div>
@@ -373,8 +376,8 @@ function PageFive({accessTrade}) {
 												</span>{' '}
 												<span style={{ color: 'red', fontWeight: 'bold' }}>(giảm -25%)</span></div>
                       </div>
-                      <div onClick={()=>changeSelectValue(3)}>
-                      <div className={classes.group}>
+                      {/* <div onClick={()=>changeSelectValue(3)}> */}
+                      {/* <div className={classes.group}>
                       1 Thùng 
                     </div>
                         <div value={30} className={`${classes.selectValue}  ${(selectedValue == 3 ? classes.active : classes.inactive)}`}>1 Thùng 4 Hộp chỉ còn{' '}
@@ -385,10 +388,10 @@ function PageFive({accessTrade}) {
 													4.800.000đ
 												</span>{' '}
 												<span style={{ color: 'red', fontWeight: 'bold' }}>(giảm -35%)</span></div>
-                      </div>
-                  </div>
+                      </div> */}
+                  {/* </div> */}
                   
-                </div>
+                </div></div>
                 
                 <Button type="submit" disabled={isSubmitting} className={classes.register_btn} >
 										ĐĂNG KÝ NGAY
