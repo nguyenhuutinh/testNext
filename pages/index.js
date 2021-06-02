@@ -1,6 +1,6 @@
 import styles from "../styles/Home.module.css";
 import "normalize.css";
-import PageOne from "../containers/PageOne";
+// import PageOne from "../containers/PageOne";
 import PageTwo from "../containers/PageTwo";
 import PageThree from "../containers/PageThree";
 import PageFour from "../containers/PageFour";
@@ -12,7 +12,7 @@ import Page9 from "../containers/Page9";
 import Page10 from "../containers/Page10";
 import Page11 from "../containers/Page11";
 import Page12 from "../containers/Page12";
-import Page13 from "../containers/Page13";
+// import Page13 from "../containers/Page13";
 import Footer from "../containers/Footer";
 import { SnackbarProvider, useSnackbar } from 'notistack';
 import { Button } from "@material-ui/core";
