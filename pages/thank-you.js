@@ -80,13 +80,13 @@ export default function Home() {
 }
   const onFinish = () => {
     var price = getQueryVariable("goi") || "1hop"
-    var total_sale_amount = 1020000
+    var total_sale_amount = 1200000
     var total_base_amount = 1200000
 		if(price == "10goi"){
       total_sale_amount = 399000
       total_base_amount = 400000
     }else if(price == "1hop"){
-      total_sale_amount = 1020000
+      total_sale_amount = 1200000
       total_base_amount = 1200000
     }
     else if(price == "2hop"){
