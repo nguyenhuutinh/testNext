@@ -255,7 +255,7 @@ function PageFive({accessTrade}) {
         alert("Số Điện Thoại Không Đúng. Vui Lòng Kiểm tra lại")
         return
     }
-    // setSubmitting(true)
+    setSubmitting(true)
     var fullname = fullNameRef.current.value
     
     // var product = selectedValue == 0 ? "10 Gói Dùng Thử" : selectedValue == 1 ? "1 Hộp" : selectedValue == 2 ?  "2 Hộp" : "1 Thùng"
