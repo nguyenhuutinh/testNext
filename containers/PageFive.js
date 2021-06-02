@@ -360,7 +360,8 @@ function PageFive({accessTrade}) {
 												{/* <span className="strikethrough" style={{ fontSize: 11 }}>
 													1.200.000đ{' '}
 												</span>{' '}
-												<span style={{ color: 'red', fontWeight: 'normal' }}>(giảm -15%)</span></div> */}
+												<span style={{ color: 'red', fontWeight: 'normal' }}>(giảm -15%)</span> */}
+                        </div>
                       </div>
                       
                       {/* <div onClick={()=>changeSelectValue(1)}>
