@@ -129,3 +129,46 @@ a{
     margin-right: 10px;
   }
 
+
+
+  .certpart{
+	
+	
+	background-image: url('/bg.png');
+	background-repeat: no-repeat;
+	
+	padding-top: 60px;
+	
+	width: 100%;
+	background-position: top center;
+	background-size: cover;
+	
+
+}
+
+.spacebar{
+	margin-top: -4px;
+	width: 90%;
+	height: 8px;
+}
+.certpart2{
+	margin-top: -4px;
+	padding-bottom: 15vh;
+	
+	background-image: url('/bg2.png');
+	background-repeat: no-repeat;
+	
+	padding-top: 30px;
+	width: 100%;
+	background-position: top center;
+	background-size: cover;
+	
+
+}
+
+  .certheader1{
+	margin-top: 40px;
+	display: flex;
+	justify-content: start;
+	
+  }
