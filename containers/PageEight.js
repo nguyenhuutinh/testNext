@@ -103,19 +103,19 @@ function PageEight() {
 											10 gói Mì Kiều Mạch dùng thử: <b>399.000đ</b> (10 gói)<br />
 										</li> */}
 										<li className={classes.productItem}>
-											1 thùng 30 gói chỉ còn: <b>1.200.000đ</b>{' '}
-											{/* <span className="strikethrough" style={{ fontSize: 12 }}>
+											1 hộp 30 gói chỉ còn: <b>1.100.000đ</b>{' '}
+											<span className="strikethrough" style={{ fontSize: 12 }}>
 												1.200.000đ
 											</span>{' '}
-											<span className={classes.discount}>(giảm 15%)</span> */}
+											<span className={classes.discount}>(giảm 100.000đ)</span>
 										</li>
-										{/* <li className={classes.productItem}>
-											2 hộp 60 gói chỉ còn: <b>1.800.000đ</b>{' '}
+										<li className={classes.productItem}>
+											2 hộp 60 gói chỉ còn: <b>2.040.000đ</b>{' '}
 											<span className="strikethrough" style={{ fontSize: 12 }}>
 												2.400.000đ
 											</span>{' '}
-											<span className={classes.discount}>(giảm 25%)</span>
-										</li> */}
+											<span className={classes.discount}>(giảm 15%)</span>
+										</li>
                     {/* <li className={classes.productItem}>
 											1 Thùng 4 Hộp chỉ còn: <b>3.120.000đ</b>{' '}
 											<span className="strikethrough" style={{ fontSize: 12 }}>

@@ -289,7 +289,10 @@ function PageFive({accessTrade}) {
 								Đăng ký ngay hôm nay để nhận ưu đãi:<br />
 								<ul className={classes.itemUl}>
 									<li className={classes.itemLi}>
-										<span style={{ color: 'red', fontWeight: 600 }}>Giảm đến 100.000đ</span> cho khách hàng mới (số lượng có hạn){' '}
+                  Ưu Đãi Khi mua 1 HỘP : <span style={{ color: 'red', fontWeight: 600 }}>Tặng Voucher 100.000đ *</span> trừ vào đơn hàng
+									</li>
+                  <li className={classes.itemLi}>
+                  Ưu Đãi Khi mua 2 HỘP : <span style={{ color: 'red', fontWeight: 600 }}>GIẢM 15% + Freeship nội thành Hồ Chí Minh, Hà Nội *</span>
 									</li>
 									<li className={classes.itemLi}>
 										Tư vấn <span style={{ color: 'red', fontWeight: 600 }}>miễn phí</span> phương
@@ -315,22 +318,22 @@ function PageFive({accessTrade}) {
                     //   <b>(10 gói)</b></div>
                     // :
                     selectedValue == 0 ? <div className={classes.selectValue, classes.selectedValue}>1 thùng 30 gói chỉ còn{' '}
-												<span style={{ color: 'red', fontWeight: 'bold' }}>1.200.000đ</span>{' '}
-												{/* <span className="strikethrough" style={{ fontSize: 11 }}>
+												<span style={{ color: 'red', fontWeight: 'bold' }}>1.100.000đ</span>{' '}
+												<span className="strikethrough" style={{ fontSize: 11 }}>
 													1.200.000đ{' '}
 												</span>{' '}
-												<span style={{ color: 'red', fontWeight: 'normal' }}>(giảm -15%)</span> */}
+												<span style={{ color: 'red', fontWeight: 'normal' }}>(giảm 100.000đ)</span>
                         </div>
                       :
                       
                       <div className={`${classes.selectValue}  ${classes.selectedValue}`}>2 hộp 60 gói chỉ còn{' '}
                       <span style={{ color: 'red', fontWeight: 'bold' }}>
-                        1.800.000đ{' '}
+                        2.040.000đ{' '}
                       </span>{' '}
                       <span className="strikethrough" style={{ fontSize: 11 }}>
                         2.400.000đ
                       </span>{' '}
-                      <span style={{ color: 'red', fontWeight: 'bold' }}>(giảm -25%)</span></div> 
+                      <span style={{ color: 'red', fontWeight: 'bold' }}>(giảm 15%)</span></div> 
                       // : <div className={`${classes.selectValue}  ${classes.selectedValue}`}>1 Thùng 4 Hộp chỉ còn{' '}
                       // <span style={{ color: 'red', fontWeight: 'bold' }}>
                       //   3.120.000đ{' '}
@@ -356,27 +359,27 @@ function PageFive({accessTrade}) {
                       1 Thùng
                     </div> 
                       <div className={`${classes.selectValue}  ${(selectedValue == 0 ? classes.active : classes.inactive)}`}>1 thùng 30 gói chỉ còn{' '}
-												<span style={{ color: 'red', fontWeight: 'bold' }}>1.200.000đ</span>{' '}
-												{/* <span className="strikethrough" style={{ fontSize: 11 }}>
+												<span style={{ color: 'red', fontWeight: 'bold' }}>1.100.000đ</span>{' '}
+												<span className="strikethrough" style={{ fontSize: 11 }}>
 													1.200.000đ{' '}
 												</span>{' '}
-												<span style={{ color: 'red', fontWeight: 'normal' }}>(giảm -15%)</span> */}
+												<span style={{ color: 'red', fontWeight: 'normal' }}>(giảm 100.000đ)</span>
                         </div>
                       </div>
                       
-                      {/* <div onClick={()=>changeSelectValue(1)}>
+                      <div onClick={()=>changeSelectValue(1)}>
                       <div className={classes.group}>
                       2 Hộp
                     </div>
                         <div value={30} className={`${classes.selectValue}  ${(selectedValue == 1 ? classes.active : classes.inactive)}`}>2 hộp 60 gói chỉ còn{' '}
 												<span style={{ color: 'red', fontWeight: 'bold' }}>
-													1.800.000đ{' '}
+													2.040.000đ{' '}
 												</span>{' '}
 												<span className="strikethrough" style={{ fontSize: 11 }}>
 													2.400.000đ
 												</span>{' '}
-												<span style={{ color: 'red', fontWeight: 'bold' }}>(giảm -25%)</span></div>
-                      </div> */}
+												<span style={{ color: 'red', fontWeight: 'bold' }}>(giảm -15%)</span></div>
+                      </div>
                       {/* <div onClick={()=>changeSelectValue(3)}> */}
                       {/* <div className={classes.group}>
                       1 Thùng 
