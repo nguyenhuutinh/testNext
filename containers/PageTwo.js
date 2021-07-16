@@ -8,6 +8,8 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 import useWindowDimensions from "../hooks/windowsize";
+import MessengerCustomerChat from 'react-messenger-customer-chat';
+
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 const useStyles = makeStyles({
@@ -115,7 +117,17 @@ function PageTwo() {
                 </Grid>
           </Grid>
           </Container>
-     
+          <MessengerCustomerChat
+
+          pageId={"576150082730649"}
+          appId={"772268856863240"}
+          htmlRef="website"
+          loggedInGreeting={"Old Henry xin kính chào quý khách! "}
+            loggedOutGreeting={"Kính chào quý khách! Vui lòng đăng nhập để gặp nhân viên CSKH Old Henrry! "}
+          language={'vi-VN'}
+          themeColor="#67B868"
+          version="11.0"
+/>
       
     </>
   );
