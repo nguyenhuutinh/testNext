@@ -77,7 +77,7 @@ const useStyles = makeStyles({
   ,
   whatsapp : {
     position: "fixed",
-    right: "15px",
+    right: "17px",
     bottom: "15vh",
     width: "70px",
     height: "70px",
