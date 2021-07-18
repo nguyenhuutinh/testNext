@@ -74,6 +74,16 @@ const useStyles = makeStyles({
   
     
   }
+  ,
+  whatsapp : {
+    position: "fixed",
+    right: "12px",
+    bottom: "16vh",
+    width: "60px",
+    height: "60px",
+    zIndex: '99',
+    }
+
 });
 
 function PageTwo() {
