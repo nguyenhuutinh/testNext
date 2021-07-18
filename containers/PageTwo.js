@@ -85,6 +85,10 @@ function PageTwo() {
   //   setTouchDevice("ontouchstart" in document.documentElement);
   // }, []);
   // const [touchDevice, setTouchDevice] = useState(false);
+  const openWhatsapp = ()=>{
+    var url = 'tel:1900633084';
+		window.open(url, '_blank');
+  }
   return (
     <>
        
@@ -117,6 +121,7 @@ function PageTwo() {
                 </Grid>
           </Grid>
           </Container>
+          <img onClick={openWhatsapp}  src={"../wa.png"}  className={classes.whatsapp} ></img>
           <MessengerCustomerChat
 
           pageId={"576150082730649"}
